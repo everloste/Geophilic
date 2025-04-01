@@ -1,0 +1,76 @@
+{
+  "feature": "geophilic:biome_specific/savanna/dirt_mound",
+  "placement": [
+    {
+      "count": {
+        "max_inclusive": 2,
+        "min_inclusive": 1,
+        "type": "minecraft:biased_to_bottom"
+      },
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "MOTION_BLOCKING_NO_LEAVES",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "predicate": {
+        "predicates": [
+          {
+            "blocks": "minecraft:coarse_dirt",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "type": "minecraft:matching_blocks"
+          },
+          {
+            "blocks": "minecraft:coarse_dirt",
+            "offset": [
+              1,
+              -1,
+              0
+            ],
+            "type": "minecraft:matching_blocks"
+          },
+          {
+            "blocks": "minecraft:coarse_dirt",
+            "offset": [
+              -1,
+              -1,
+              0
+            ],
+            "type": "minecraft:matching_blocks"
+          },
+          {
+            "blocks": "minecraft:coarse_dirt",
+            "offset": [
+              0,
+              -1,
+              1
+            ],
+            "type": "minecraft:matching_blocks"
+          },
+          {
+            "blocks": "minecraft:coarse_dirt",
+            "offset": [
+              0,
+              -1,
+              -1
+            ],
+            "type": "minecraft:matching_blocks"
+          }
+        ],
+        "type": "minecraft:all_of"
+      },
+      "type": "minecraft:block_predicate_filter"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

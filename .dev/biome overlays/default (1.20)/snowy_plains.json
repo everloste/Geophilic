@@ -1,0 +1,24 @@
+{
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:glow_lichen",
+      "minecraft:trees_snowy",
+      "geophilic:common/flowers/default",
+      "geophilic:common/mushrooms",
+      "geophilic:common/sugar_cane",
+      "geophilic:common/pumpkins"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
+}

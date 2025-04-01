@@ -1,0 +1,139 @@
+{
+	"type": "minecraft:simple_random_selector",
+	"config": {
+		"features": [
+			{
+				"feature": {
+					"type": "minecraft:random_patch",
+					"config": {
+						"tries": 8,
+						"xz_spread": 3,
+						"y_spread": 1,
+						"feature": {
+							"feature": {
+								"type": "minecraft:simple_block",
+								"config": {
+									"to_place": {
+										"type": "minecraft:simple_state_provider",
+										"state": {
+											"Name": "minecraft:allium"
+										}
+									}
+								}
+							},
+							"placement": [
+								{
+									"type": "minecraft:block_predicate_filter",
+									"predicate": {
+										"type": "minecraft:matching_blocks",
+										"blocks": "minecraft:air"
+									}
+								}
+							]
+						}
+					}
+				},
+				"placement": []
+			},
+			{
+				"feature": {
+					"type": "minecraft:random_patch",
+					"config": {
+						"tries": 8,
+						"xz_spread": 3,
+						"y_spread": 1,
+						"feature": {
+							"feature": {
+								"type": "minecraft:simple_block",
+								"config": {
+									"to_place": {
+										"type": "minecraft:simple_state_provider",
+										"state": {
+											"Name": "minecraft:cornflower"
+										}
+									}
+								}
+							},
+							"placement": [
+								{
+									"type": "minecraft:block_predicate_filter",
+									"predicate": {
+										"type": "minecraft:matching_blocks",
+										"blocks": "minecraft:air"
+									}
+								}
+							]
+						}
+					}
+				},
+				"placement": []
+			},
+			{
+				"feature": {
+					"type": "minecraft:random_patch",
+					"config": {
+						"tries": 8,
+						"xz_spread": 3,
+						"y_spread": 1,
+						"feature": {
+							"feature": {
+								"type": "minecraft:simple_block",
+								"config": {
+									"to_place": {
+										"type": "minecraft:simple_state_provider",
+										"state": {
+											"Name": "minecraft:azure_bluet"
+										}
+									}
+								}
+							},
+							"placement": [
+								{
+									"type": "minecraft:block_predicate_filter",
+									"predicate": {
+										"type": "minecraft:matching_blocks",
+										"blocks": "minecraft:air"
+									}
+								}
+							]
+						}
+					}
+				},
+				"placement": []
+			},
+			{
+				"feature": {
+					"type": "minecraft:no_bonemeal_flower",
+					"config": {
+						"tries": 8,
+						"xz_spread": 3,
+						"y_spread": 1,
+						"feature": {
+							"feature": {
+								"type": "minecraft:simple_block",
+								"config": {
+									"to_place": {
+										"type": "minecraft:simple_state_provider",
+										"state": {
+											"Name": "minecraft:poppy"
+										}
+									}
+								}
+							},
+							"placement": [
+								{
+									"type": "minecraft:block_predicate_filter",
+									"predicate": {
+										"type": "minecraft:matching_blocks",
+										"blocks": "minecraft:air"
+									}
+								}
+							]
+						}
+					}
+				},
+				"placement": []
+			}
+		]
+	}
+}

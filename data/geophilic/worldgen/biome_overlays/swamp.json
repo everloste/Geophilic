@@ -1,0 +1,29 @@
+{
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:glow_lichen",
+      "geophilic:swamp/mud",
+      "geophilic:swamp/trees",
+      "geophilic:swamp/logs",
+      "geophilic:swamp/flowers",
+      "minecraft:patch_dead_bush",
+      "minecraft:patch_waterlily",
+      "geophilic:swamp/mushrooms",
+      "geophilic:swamp/sugar_cane",
+      "geophilic:common/pumpkins",
+      "geophilic:common/moss",
+      "minecraft:seagrass_swamp",
+      "geophilic:common/grass/plains"
+    ],
+    []
+  ]
+}

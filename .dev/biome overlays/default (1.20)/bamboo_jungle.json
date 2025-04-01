@@ -1,0 +1,30 @@
+{
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:glow_lichen",
+      "geophilic:jungle/rocks",
+      "geophilic:jungle/bamboo/bamboo",
+      "geophilic:jungle/trees",
+      "geophilic:jungle/logs",
+      "geophilic:jungle/bushes",
+      "geophilic:common/flowers/warm",
+      "geophilic:common/mushrooms",
+      "geophilic:common/sugar_cane",
+      "geophilic:common/pumpkins",
+      "geophilic:common/moss",
+      "minecraft:vines",
+      "geophilic:jungle/melons",
+      "geophilic:common/grass/jungle"
+    ],
+    []
+  ]
+}

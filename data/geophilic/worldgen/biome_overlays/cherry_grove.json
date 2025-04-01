@@ -1,0 +1,34 @@
+{
+	"effects": {
+		"foliage_color": 12181596,
+		"grass_color": 8050773
+	},
+	"features": [
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[
+			"minecraft:glow_lichen",
+			"geophilic:cherry_grove/rocks",
+			"geophilic:cherry_grove/stone_patches",
+			"geophilic:cherry_grove/pillars",
+			"geophilic:cherry_grove/deltas",
+			"geophilic:cherry_grove/trees",
+			"geophilic:cherry_grove/bamboo",
+			"geophilic:cherry_grove/bushes",
+			"geophilic:cherry_grove/fallen_logs",
+			"geophilic:cherry_grove/pink_petals",
+			"geophilic:common/mushrooms",
+			"geophilic:common/sugar_cane",
+			"geophilic:common/moss",
+			"geophilic:common/grass/meadow"
+		],
+		[]
+	]
+}

@@ -1,0 +1,28 @@
+{
+	"features": [
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[
+			"minecraft:glow_lichen",
+			"geophilic:plains/dirt_patches",
+			"geophilic:plains/rocks",
+			"geophilic:plains/trees",
+			"geophilic:plains/logs",
+			"geophilic:plains/flowers",
+			"geophilic:common/mushrooms",
+			"geophilic:common/sugar_cane",
+			"geophilic:common/pumpkins",
+			"geophilic:common/moss",
+			"geophilic:common/tall_grass",
+			"geophilic:common/grass/plains"
+		],
+		[]
+	]
+}

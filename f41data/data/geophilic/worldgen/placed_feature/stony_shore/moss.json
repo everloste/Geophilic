@@ -1,0 +1,27 @@
+{
+  "feature": "geophilic:biome_specific/stony_shore/moss",
+  "placement": [
+    {
+      "count": 7,
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "MOTION_BLOCKING_NO_LEAVES",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "direction_of_search": "up",
+      "max_steps": 12,
+      "target_condition": {
+        "type": "minecraft:true"
+      },
+      "type": "minecraft:environment_scan"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+	"schemaVersion": 1,
+	"id": "geophilic",
+	"version": "3.4-c",
+	"name": "Geophilic",
+	"description": "A subtle-ish overhaul of vanilla Overworld biomes.",
+	"authors": [
+		"bebebea_loste"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/datapack/geophilic",
+		"issues": "https://modrinth.com/datapack/geophilic"
+	},
+	"license": "ARR",
+	"icon": "pack.png",
+	"environment": "*",
+	"depends": {
+		"fabric-api": "*",
+		"minecraft": ">=1.20"
+	}
+}

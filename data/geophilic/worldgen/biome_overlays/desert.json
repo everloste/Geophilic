@@ -1,0 +1,27 @@
+{
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground",
+      "geophilic:desert/lava_lakes"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:glow_lichen",
+      "geophilic:common/flowers/default",
+      "minecraft:patch_grass_badlands",
+      "minecraft:patch_dead_bush_2",
+      "geophilic:common/mushrooms",
+      "geophilic:desert/sugar_cane",
+      "geophilic:common/pumpkins",
+      "geophilic:desert/cacti"
+    ],
+    []
+  ]
+}

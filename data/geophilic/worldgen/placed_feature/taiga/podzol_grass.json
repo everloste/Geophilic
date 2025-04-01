@@ -1,0 +1,19 @@
+{
+	"feature": "geophilic:patch/grass/taiga_on_podzol",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 6
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING_NO_LEAVES"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

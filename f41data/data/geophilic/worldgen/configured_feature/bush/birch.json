@@ -1,0 +1,85 @@
+{
+  "config": {
+    "decorators": [
+      {
+        "block_provider": {
+          "state": {
+            "Name": "minecraft:birch_leaves",
+            "Properties": {
+              "distance": "4",
+              "persistent": "false",
+              "waterlogged": "false"
+            }
+          },
+          "type": "minecraft:simple_state_provider"
+        },
+        "directions": [
+          "north",
+          "east",
+          "south",
+          "west",
+          "up"
+        ],
+        "exclusion_radius_xz": 1,
+        "exclusion_radius_y": 0,
+        "probability": 0.4,
+        "required_empty_blocks": 1,
+        "type": "minecraft:attached_to_leaves"
+      },
+      {
+        "probability": 0.1,
+        "type": "minecraft:leave_vine"
+      }
+    ],
+    "dirt_provider": {
+      "state": {
+        "Name": "minecraft:birch_log",
+        "Properties": {
+          "axis": "y"
+        }
+      },
+      "type": "minecraft:simple_state_provider"
+    },
+    "foliage_placer": {
+      "height": 1,
+      "offset": 0,
+      "radius": 2,
+      "type": "minecraft:blob_foliage_placer"
+    },
+    "foliage_provider": {
+      "state": {
+        "Name": "minecraft:birch_leaves",
+        "Properties": {
+          "distance": "4",
+          "persistent": "false",
+          "waterlogged": "false"
+        }
+      },
+      "type": "minecraft:simple_state_provider"
+    },
+    "force_dirt": false,
+    "ignore_vines": true,
+    "minimum_size": {
+      "limit": 1,
+      "lower_size": 0,
+      "type": "minecraft:two_layers_feature_size",
+      "upper_size": 1
+    },
+    "trunk_placer": {
+      "base_height": 0,
+      "height_rand_a": 1,
+      "height_rand_b": 0,
+      "type": "minecraft:straight_trunk_placer"
+    },
+    "trunk_provider": {
+      "state": {
+        "Name": "minecraft:birch_log",
+        "Properties": {
+          "axis": "y"
+        }
+      },
+      "type": "minecraft:simple_state_provider"
+    }
+  },
+  "type": "minecraft:tree"
+}

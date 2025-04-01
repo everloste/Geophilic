@@ -1,0 +1,73 @@
+{
+  "feature": {
+    "config": {
+      "default": {
+        "feature": "geophilic:fallen_log/spruce",
+        "placement": []
+      },
+      "features": [
+        {
+          "chance": 0.3,
+          "feature": {
+            "feature": "geophilic:tree_stump/spruce",
+            "placement": []
+          }
+        }
+      ]
+    },
+    "type": "minecraft:random_selector"
+  },
+  "placement": [
+    {
+      "noise_factor": 32,
+      "noise_offset": 1,
+      "noise_to_count_ratio": 2,
+      "type": "minecraft:noise_based_count"
+    },
+    {
+      "chance": 5,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "WORLD_SURFACE_WG",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "max_water_depth": 0,
+      "type": "minecraft:surface_water_depth_filter"
+    },
+    {
+      "direction_of_search": "up",
+      "max_steps": 8,
+      "target_condition": {
+        "predicate": {
+          "blocks": "minecraft:powder_snow",
+          "type": "minecraft:matching_blocks"
+        },
+        "type": "minecraft:not"
+      },
+      "type": "minecraft:environment_scan"
+    },
+    {
+      "predicate": {
+        "blocks": [
+          "minecraft:snow_block",
+          "minecraft:powder_snow"
+        ],
+        "offset": [
+          0,
+          -1,
+          0
+        ],
+        "type": "minecraft:matching_blocks"
+      },
+      "type": "minecraft:block_predicate_filter"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

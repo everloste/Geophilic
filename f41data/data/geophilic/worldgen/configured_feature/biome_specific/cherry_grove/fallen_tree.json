@@ -1,0 +1,135 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "config": {
+            "allowed_placement": {
+              "predicates": [
+                {
+                  "type": "minecraft:replaceable"
+                },
+                {
+                  "blocks": [
+                    "minecraft:grass_block",
+                    "minecraft:stone",
+                    "minecraft:gravel"
+                  ],
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "type": "minecraft:matching_blocks"
+                }
+              ],
+              "type": "minecraft:all_of"
+            },
+            "direction": "north",
+            "layers": [
+              {
+                "height": {
+                  "max_inclusive": 5,
+                  "min_inclusive": 3,
+                  "type": "minecraft:uniform"
+                },
+                "provider": {
+                  "state": {
+                    "Name": "minecraft:cherry_log",
+                    "Properties": {
+                      "axis": "z"
+                    }
+                  },
+                  "type": "minecraft:simple_state_provider"
+                }
+              }
+            ],
+            "prioritize_tip": true
+          },
+          "type": "minecraft:block_column"
+        },
+        "placement": [
+          {
+            "predicate": {
+              "blocks": [
+                "minecraft:grass_block"
+              ],
+              "offset": [
+                0,
+                -1,
+                0
+              ],
+              "type": "minecraft:matching_blocks"
+            },
+            "type": "minecraft:block_predicate_filter"
+          }
+        ]
+      },
+      {
+        "feature": {
+          "config": {
+            "allowed_placement": {
+              "predicates": [
+                {
+                  "type": "minecraft:replaceable"
+                },
+                {
+                  "blocks": [
+                    "minecraft:grass_block"
+                  ],
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "type": "minecraft:matching_blocks"
+                }
+              ],
+              "type": "minecraft:all_of"
+            },
+            "direction": "west",
+            "layers": [
+              {
+                "height": {
+                  "max_inclusive": 5,
+                  "min_inclusive": 3,
+                  "type": "minecraft:uniform"
+                },
+                "provider": {
+                  "state": {
+                    "Name": "minecraft:cherry_log",
+                    "Properties": {
+                      "axis": "x"
+                    }
+                  },
+                  "type": "minecraft:simple_state_provider"
+                }
+              }
+            ],
+            "prioritize_tip": true
+          },
+          "type": "minecraft:block_column"
+        },
+        "placement": [
+          {
+            "predicate": {
+              "blocks": [
+                "minecraft:grass_block",
+                "minecraft:stone",
+                "minecraft:gravel"
+              ],
+              "offset": [
+                0,
+                -1,
+                0
+              ],
+              "type": "minecraft:matching_blocks"
+            },
+            "type": "minecraft:block_predicate_filter"
+          }
+        ]
+      }
+    ]
+  },
+  "type": "minecraft:simple_random_selector"
+}

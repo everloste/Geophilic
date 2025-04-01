@@ -1,0 +1,170 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"tries": 16,
+		"xz_spread": 3,
+		"y_spread": 1,
+		"feature": {
+			"feature": {
+				"type": "minecraft:simple_random_selector",
+				"config": {
+					"features": [
+						{
+							"feature": {
+								"type": "minecraft:simple_block",
+								"config": {
+									"to_place": {
+										"type": "minecraft:simple_state_provider",
+										"state": {
+											"Name": "minecraft:oak_log",
+											"Properties": {
+												"axis": "y"
+											}
+										}
+									}
+								}
+							},
+							"placement": [
+								{
+									"type": "minecraft:block_predicate_filter",
+									"predicate": {
+										"type": "minecraft:any_of",
+										"predicates": [
+											{
+												"type": "minecraft:matching_blocks",
+												"offset": [
+													1,
+													1,
+													0
+												],
+												"blocks": "minecraft:oak_log"
+											},
+											{
+												"type": "minecraft:matching_blocks",
+												"offset": [
+													-1,
+													1,
+													0
+												],
+												"blocks": "minecraft:oak_log"
+											},
+											{
+												"type": "minecraft:matching_blocks",
+												"offset": [
+													0,
+													1,
+													1
+												],
+												"blocks": "minecraft:oak_log"
+											},
+											{
+												"type": "minecraft:matching_blocks",
+												"offset": [
+													0,
+													1,
+													-1
+												],
+												"blocks": "minecraft:oak_log"
+											}
+										]
+									}
+								}
+							]
+						}
+					]
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					}
+				},
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:not",
+						"predicate": {
+							"type": "minecraft:any_of",
+							"predicates": [
+								{
+									"type": "minecraft:matching_blocks",
+									"offset": [
+										0,
+										1,
+										0
+									],
+									"blocks": "minecraft:oak_log"
+								},
+								{
+									"type": "minecraft:matching_blocks",
+									"offset": [
+										0,
+										-1,
+										0
+									],
+									"blocks": "minecraft:oak_log"
+								},
+								{
+									"type": "minecraft:matching_blocks",
+									"offset": [
+										1,
+										1,
+										1
+									],
+									"blocks": "minecraft:oak_log"
+								},
+								{
+									"type": "minecraft:matching_blocks",
+									"offset": [
+										-1,
+										1,
+										1
+									],
+									"blocks": "minecraft:oak_log"
+								},
+								{
+									"type": "minecraft:matching_blocks",
+									"offset": [
+										1,
+										1,
+										-1
+									],
+									"blocks": "minecraft:oak_log"
+								},
+								{
+									"type": "minecraft:matching_blocks",
+									"offset": [
+										-1,
+										1,
+										-1
+									],
+									"blocks": "minecraft:oak_log"
+								}
+							]
+						}
+					}
+				},
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:all_of",
+						"predicates": [
+							{
+								"type": "minecraft:matching_blocks",
+								"offset": [
+									0,
+									-1,
+									0
+								],
+								"blocks": "#minecraft:dirt"
+							}
+						]
+					}
+				}
+			]
+		}
+	}
+}

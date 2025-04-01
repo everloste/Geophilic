@@ -1,0 +1,49 @@
+{
+	"feature": {
+		"type": "minecraft:random_selector",
+		"config": {
+			"features": [
+				{
+					"chance": 0.5,
+					"feature": {
+						"feature": "geophilic:rock/ore",
+						"placement": []
+					}
+				}
+			],
+			"default": {
+				"feature": "geophilic:rock/stone",
+				"placement": []
+			}
+		}
+	},
+	"placement": [
+		{
+			"type": "minecraft:noise_based_count",
+			"noise_to_count_ratio": 1,
+			"noise_factor": 64
+		},
+		{
+			"type": "minecraft:count",
+			"count": 3
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 12
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR"
+		},
+		{
+			"type": "minecraft:surface_water_depth_filter",
+			"max_water_depth": 1
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

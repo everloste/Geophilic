@@ -1,0 +1,34 @@
+{
+	"effects": {
+    "grass_color": 7178845
+	},
+	"features": [
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[
+			"minecraft:glow_lichen",
+			"geophilic:taiga/podzol_patches",
+			"geophilic:taiga/rocks",
+			"geophilic:taiga/trees",
+			"geophilic:common/tree_ornaments/spruce",
+			"geophilic:taiga/logs",
+			"geophilic:taiga/berry_bushes",
+			"geophilic:common/flowers/default",
+			"geophilic:common/mushrooms",
+			"geophilic:common/sugar_cane",
+			"geophilic:common/pumpkins",
+			"geophilic:common/moss",
+			"geophilic:common/large_fern",
+			"geophilic:common/grass/taiga",
+			"geophilic:taiga/podzol_grass"
+		],
+		[]
+	]
+}

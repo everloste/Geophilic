@@ -1,0 +1,19 @@
+{
+	"feature": "geophilic:other/spruce_tree_branch_placer",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 5
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING_NO_LEAVES"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

@@ -1,0 +1,86 @@
+{
+	"pack": {
+		"name": "Geophilic",
+		"version": "Snap 3.4-c",
+		"description": "\u00A77Geophilic\u00A7r\nA biome overhaul data pack",
+		"pack_format": 15,
+		"supported_formats": [
+			15,
+			71
+		]
+	},
+	"overlays": {
+		"entries": [
+			{
+				"formats": [
+					26,
+					512
+				],
+				"directory": "f26data"
+			},
+			{
+				"formats": [
+					41,
+					512
+				],
+				"directory": "f41data"
+			},
+			{
+				"formats": [
+					61,
+					512
+				],
+				"directory": "f61-pale_garden"
+			},
+			{
+				"formats": [
+					71,
+					512
+				],
+				"directory": "f71-spring_to_life"
+			},
+			{
+				"formats": [
+					18,
+					26
+				],
+				"directory": "biomes_1_20_2"
+			},
+			{
+				"formats": [
+					41,
+					41
+				],
+				"directory": "biomes_1_20_5"
+			},
+			{
+				"formats": [
+					48,
+					48
+				],
+				"directory": "biomes_1_21"
+			},
+			{
+				"formats": [
+					57,
+					57
+				],
+				"directory": "biomes_1_21_2"
+			},
+			{
+				"formats": [
+					61,
+					512
+				],
+				"directory": "biomes_1_21_4"
+			},
+			{
+				"formats": [
+					71,
+					512
+				],
+				"directory": "biomes_1_21_5"
+			}
+		]
+	}
+}

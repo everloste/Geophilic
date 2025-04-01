@@ -1,0 +1,24 @@
+{
+	"feature": "minecraft:bamboo_no_podzol",
+	"placement": [
+		{
+			"type": "minecraft:noise_based_count",
+			"noise_to_count_ratio": 5,
+			"noise_factor": 48
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 2
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING_NO_LEAVES"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

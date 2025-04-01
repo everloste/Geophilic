@@ -1,0 +1,32 @@
+{
+  "feature": "geophilic:rock/cobblestone",
+  "placement": [
+    {
+      "noise_factor": 64,
+      "noise_to_count_ratio": 1,
+      "type": "minecraft:noise_based_count"
+    },
+    {
+      "count": 3,
+      "type": "minecraft:count"
+    },
+    {
+      "chance": 5,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "WORLD_SURFACE_WG",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "max_water_depth": 1,
+      "type": "minecraft:surface_water_depth_filter"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

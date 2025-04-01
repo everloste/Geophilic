@@ -1,0 +1,23 @@
+{
+	"feature": "geophilic:other/oak_tree_root_placer",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 128
+		},
+		{
+			"type": "minecraft:count",
+			"count": 2
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING_NO_LEAVES"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

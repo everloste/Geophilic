@@ -1,0 +1,28 @@
+{
+	"features": [
+		[],
+		[],
+		[],
+		[],
+		[],
+		[
+			"geophilic:stony_shore/pillars/large",
+			"geophilic:stony_shore/pillars/small",
+			"geophilic:stony_shore/puddles"
+		],
+		[],
+		[],
+		[],
+		[
+			"minecraft:glow_lichen",
+			"geophilic:common/flowers/default",
+			"minecraft:patch_grass_badlands",
+			"geophilic:common/mushrooms",
+			"geophilic:common/sugar_cane",
+			"geophilic:common/pumpkins",
+			"geophilic:stony_shore/moss",
+			"geophilic:stony_shore/moss_blocks"
+		],
+		[]
+	]
+}

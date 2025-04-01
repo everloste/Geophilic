@@ -1,0 +1,33 @@
+{
+  "effects": {
+    "foliage_color": 7442726,
+    "grass_color": 12500032
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:glow_lichen",
+      "geophilic:savanna/dirt_patches",
+      "geophilic:savanna/dirt_mounds",
+      "geophilic:savanna/plateau/trees",
+      "geophilic:savanna/bonus_trees",
+      "geophilic:savanna/logs",
+      "geophilic:savanna/bushes",
+      "geophilic:common/flowers/warm",
+      "geophilic:common/mushrooms",
+      "geophilic:common/sugar_cane",
+      "geophilic:common/pumpkins",
+      "geophilic:common/tall_grass",
+      "geophilic:common/grass/savanna"
+    ],
+    []
+  ]
+}

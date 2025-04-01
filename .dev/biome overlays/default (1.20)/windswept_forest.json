@@ -1,0 +1,31 @@
+{
+  "effects": {
+    "grass_color": 5744745
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:glow_lichen",
+      "geophilic:windswept/rocks",
+      "geophilic:windswept/forest/trees",
+      "geophilic:windswept/forest/logs",
+      "geophilic:windswept/bushes",
+      "geophilic:common/flowers/default",
+      "geophilic:windswept/flowers",
+      "geophilic:common/mushrooms",
+      "geophilic:common/sugar_cane",
+      "geophilic:common/pumpkins",
+      "geophilic:common/moss",
+      "geophilic:common/grass/meadow"
+    ],
+    []
+  ]
+}

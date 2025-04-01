@@ -1,0 +1,63 @@
+{
+  "feature": {
+    "config": {
+      "default": {
+        "feature": "geophilic:tree/oak/swamp/modern",
+        "placement": []
+      },
+      "features": [
+        {
+          "chance": 0.2,
+          "feature": {
+            "feature": "geophilic:tree/oak/swamp/classic",
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.3,
+          "feature": {
+            "feature": "geophilic:tree/oak/swamp/young",
+            "placement": []
+          }
+        }
+      ]
+    },
+    "type": "minecraft:random_selector"
+  },
+  "placement": [
+    {
+      "count": {
+        "max_inclusive": 5,
+        "min_inclusive": 3,
+        "type": "minecraft:biased_to_bottom"
+      },
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "max_water_depth": 2,
+      "type": "minecraft:surface_water_depth_filter"
+    },
+    {
+      "heightmap": "OCEAN_FLOOR",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "predicate": {
+        "state": {
+          "Name": "minecraft:oak_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        },
+        "type": "minecraft:would_survive"
+      },
+      "type": "minecraft:block_predicate_filter"
+    }
+  ]
+}

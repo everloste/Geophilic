@@ -1,0 +1,272 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"tries": 64,
+		"xz_spread": 4,
+		"y_spread": 4,
+		"feature": {
+			"feature": {
+				"type": "minecraft:simple_random_selector",
+				"config": {
+					"features": [
+						{
+							"feature": {
+								"type": "minecraft:simple_block",
+								"config": {
+									"to_place": {
+										"type": "minecraft:simple_state_provider",
+										"state": {
+											"Name": "minecraft:spruce_log",
+											"Properties": {
+												"axis": "x"
+											}
+										}
+									}
+								}
+							},
+							"placement": [
+								{
+									"type": "minecraft:block_predicate_filter",
+									"predicate": {
+										"type": "minecraft:any_of",
+										"predicates": [
+											{
+												"type": "minecraft:matching_blocks",
+												"offset": [
+													1,
+													0,
+													0
+												],
+												"blocks": "minecraft:spruce_log"
+											},
+											{
+												"type": "minecraft:matching_blocks",
+												"offset": [
+													-1,
+													0,
+													0
+												],
+												"blocks": "minecraft:spruce_log"
+											}
+										]
+									}
+								},
+								{
+									"type": "minecraft:block_predicate_filter",
+									"predicate": {
+										"type": "minecraft:all_of",
+										"predicates": [
+											{
+												"type": "minecraft:not",
+												"predicate": {
+													"type": "minecraft:matching_blocks",
+													"offset": [
+														2,
+														0,
+														0
+													],
+													"blocks": "minecraft:spruce_log"
+												}
+											},
+											{
+												"type": "minecraft:not",
+												"predicate": {
+													"type": "minecraft:matching_blocks",
+													"offset": [
+														-2,
+														0,
+														0
+													],
+													"blocks": "minecraft:spruce_log"
+												}
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"feature": {
+								"type": "minecraft:simple_block",
+								"config": {
+									"to_place": {
+										"type": "minecraft:simple_state_provider",
+										"state": {
+											"Name": "minecraft:spruce_log",
+											"Properties": {
+												"axis": "z"
+											}
+										}
+									}
+								}
+							},
+							"placement": [
+								{
+									"type": "minecraft:block_predicate_filter",
+									"predicate": {
+										"type": "minecraft:any_of",
+										"predicates": [
+											{
+												"type": "minecraft:matching_blocks",
+												"offset": [
+													0,
+													0,
+													1
+												],
+												"blocks": "minecraft:spruce_log"
+											},
+											{
+												"type": "minecraft:matching_blocks",
+												"offset": [
+													0,
+													0,
+													-1
+												],
+												"blocks": "minecraft:spruce_log"
+											}
+										]
+									}
+								},
+								{
+									"type": "minecraft:block_predicate_filter",
+									"predicate": {
+										"type": "minecraft:all_of",
+										"predicates": [
+											{
+												"type": "minecraft:not",
+												"predicate": {
+													"type": "minecraft:matching_blocks",
+													"offset": [
+														0,
+														0,
+														2
+													],
+													"blocks": "minecraft:spruce_log"
+												}
+											},
+											{
+												"type": "minecraft:not",
+												"predicate": {
+													"type": "minecraft:matching_blocks",
+													"offset": [
+														0,
+														0,
+														-2
+													],
+													"blocks": "minecraft:spruce_log"
+												}
+											}
+										]
+									}
+								}
+							]
+						}
+					]
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					}
+				},
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:not",
+						"predicate": {
+							"type": "minecraft:any_of",
+							"predicates": [
+								{
+									"type": "minecraft:matching_blocks",
+									"offset": [
+										0,
+										1,
+										0
+									],
+									"blocks": "minecraft:spruce_log"
+								},
+								{
+									"type": "minecraft:matching_blocks",
+									"offset": [
+										0,
+										-1,
+										0
+									],
+									"blocks": "minecraft:spruce_log"
+								}
+							]
+						}
+					}
+				},
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:not",
+						"predicate": {
+							"type": "minecraft:any_of",
+							"predicates": [
+								{
+									"type": "minecraft:has_sturdy_face",
+									"offset": [
+										0,
+										-1,
+										0
+									],
+									"direction": "up"
+								},
+								{
+									"type": "minecraft:has_sturdy_face",
+									"offset": [
+										0,
+										-2,
+										0
+									],
+									"direction": "up"
+								},
+								{
+									"type": "minecraft:matching_blocks",
+									"offset": [
+										1,
+										0,
+										1
+									],
+									"blocks": "minecraft:spruce_log"
+								},
+								{
+									"type": "minecraft:matching_blocks",
+									"offset": [
+										1,
+										0,
+										-1
+									],
+									"blocks": "minecraft:spruce_log"
+								},
+								{
+									"type": "minecraft:matching_blocks",
+									"offset": [
+										-1,
+										0,
+										1
+									],
+									"blocks": "minecraft:spruce_log"
+								},
+								{
+									"type": "minecraft:matching_blocks",
+									"offset": [
+										-1,
+										0,
+										-1
+									],
+									"blocks": "minecraft:spruce_log"
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+	}
+}

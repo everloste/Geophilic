@@ -1,0 +1,27 @@
+{
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:glow_lichen",
+      "geophilic:badlands/trees",
+      "minecraft:patch_grass_badlands",
+      "minecraft:patch_dead_bush_badlands",
+      "geophilic:common/mushrooms",
+      "geophilic:common/sugar_cane",
+      "geophilic:common/pumpkins",
+      "geophilic:river/firefly_bush_patch",
+      "geophilic:forest/leaf_litter",
+      "geophilic:badlands/dry_grass",
+      "geophilic:badlands/cacti"
+    ],
+    []
+  ]
+}

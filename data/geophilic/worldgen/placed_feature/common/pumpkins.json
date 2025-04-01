@@ -1,0 +1,38 @@
+{
+	"feature": "geophilic:patch/pumpkins",
+	"placement": [
+		{
+			"type": "minecraft:noise_based_count",
+			"noise_to_count_ratio": 1,
+			"noise_factor": 96
+		},
+		{
+			"type": "minecraft:count",
+			"count": 3
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 64
+		},
+		{
+			"type": "minecraft:count",
+			"count": {
+				"type": "minecraft:biased_to_bottom",
+				"value": {
+					"min_inclusive": 1,
+					"max_inclusive": 2
+				}
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING_NO_LEAVES"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

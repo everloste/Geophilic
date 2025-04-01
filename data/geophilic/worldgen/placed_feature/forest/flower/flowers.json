@@ -1,0 +1,49 @@
+{
+	"feature": {
+		"type": "minecraft:simple_random_selector",
+		"config": {
+			"features": [
+				{
+					"feature": "geophilic:flower/forest",
+					"placement": []
+				},
+				{
+					"feature": "geophilic:flower/noise_based/flower_forest",
+					"placement": []
+				}
+			]
+		}
+	},
+	"placement": [
+		{
+			"type": "minecraft:noise_threshold_count",
+			"noise_level": -0.8,
+			"below_noise": 15,
+			"above_noise": 4
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 3
+		},
+		{
+			"type": "minecraft:count",
+			"count": {
+				"type": "minecraft:biased_to_bottom",
+				"value": {
+					"min_inclusive": 1,
+					"max_inclusive": 3
+				}
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING_NO_LEAVES"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

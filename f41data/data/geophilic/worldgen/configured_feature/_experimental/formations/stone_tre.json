@@ -1,0 +1,36 @@
+{
+  "config": {
+    "feature": {
+      "feature": {
+        "config": {
+          "allowed_placement": {
+            "type": "minecraft:true"
+          },
+          "direction": "up",
+          "layers": [
+            {
+              "height": {
+                "max_inclusive": 10,
+                "min_inclusive": 3,
+                "type": "minecraft:biased_to_bottom"
+              },
+              "provider": {
+                "state": {
+                  "Name": "minecraft:stone"
+                },
+                "type": "minecraft:simple_state_provider"
+              }
+            }
+          ],
+          "prioritize_tip": false
+        },
+        "type": "minecraft:block_column"
+      },
+      "placement": []
+    },
+    "tries": 16,
+    "xz_spread": 1,
+    "y_spread": 4
+  },
+  "type": "minecraft:random_patch"
+}

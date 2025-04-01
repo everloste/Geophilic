@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "id": "geophilic",
+    "group": "bebebea_loste",
+    "version": "3.4-c",
+    "metadata": {
+      "name": "Geophilic",
+      "description": "A subtle-ish overhaul of vanilla Overworld biomes.",
+      "icon": "pack.png",
+      "contributors": {
+        "bebebea_loste": "Creator"
+      },
+      "contact": {
+        "homepage": "https://modrinth.com/datapack/geophilic",
+        "issues": "https://modrinth.com/datapack/geophilic"
+      }
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "depends": [
+      {
+        "id": "quilt_resource_loader",
+        "versions": "*",
+        "unless": "fabric-resource-loader-v0"
+      },
+      {
+        "id": "minecraft",
+        "versions": ">=1.20"
+      }
+    ]
+  }
+}

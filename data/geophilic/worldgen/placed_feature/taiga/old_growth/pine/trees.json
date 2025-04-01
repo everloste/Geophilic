@@ -1,0 +1,63 @@
+{
+  "feature": {
+    "type": "minecraft:random_selector",
+    "config": {
+      "features": [
+        {
+          "chance": 0.025,
+          "feature": "minecraft:mega_spruce_checked"
+        },
+        {
+          "chance": 0.30,
+          "feature": "minecraft:mega_pine_checked"
+        },
+        {
+          "chance": 0.33,
+          "feature": "minecraft:pine_checked"
+        }
+      ],
+			"default": {
+				"feature": "geophilic:tree/spruce/classic",
+				"placement": []
+			}
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 24,
+      "noise_factor": 32,
+      "noise_offset": 1
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 3
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:surface_water_depth_filter",
+      "max_water_depth": 0
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "minecraft:spruce_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

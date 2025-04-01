@@ -1,0 +1,65 @@
+{
+  "feature": {
+    "config": {
+      "default": {
+        "feature": "geophilic:fallen_log/oak",
+        "placement": []
+      },
+      "features": [
+        {
+          "chance": 0.2,
+          "feature": {
+            "feature": "geophilic:fallen_log/birch",
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.3,
+          "feature": {
+            "feature": "geophilic:tree_stump/oak",
+            "placement": []
+          }
+        }
+      ]
+    },
+    "type": "minecraft:random_selector"
+  },
+  "placement": [
+    {
+      "noise_factor": 32,
+      "noise_offset": 1,
+      "noise_to_count_ratio": 2,
+      "type": "minecraft:noise_based_count"
+    },
+    {
+      "chance": 5,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "MOTION_BLOCKING_NO_LEAVES",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "max_water_depth": 0,
+      "type": "minecraft:surface_water_depth_filter"
+    },
+    {
+      "predicate": {
+        "state": {
+          "Name": "minecraft:oak_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        },
+        "type": "minecraft:would_survive"
+      },
+      "type": "minecraft:block_predicate_filter"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

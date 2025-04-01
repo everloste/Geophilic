@@ -1,0 +1,21 @@
+{
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:glow_lichen",
+      "geophilic:meadow/flowers",
+      "geophilic:meadow/trees",
+      "geophilic:meadow/wildflowers",
+      "geophilic:common/grass/meadow"
+    ],
+    []
+  ]
+}

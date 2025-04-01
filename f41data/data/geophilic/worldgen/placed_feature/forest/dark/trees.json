@@ -1,0 +1,94 @@
+{
+  "feature": {
+    "config": {
+      "default": {
+        "feature": "geophilic:tree/dark_oak/classic",
+        "placement": []
+      },
+      "features": [
+        {
+          "chance": 0.01,
+          "feature": {
+            "feature": "geophilic:tree/huge_mushroom/brown",
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.02,
+          "feature": {
+            "feature": "geophilic:tree/huge_mushroom/red",
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.5,
+          "feature": {
+            "feature": "geophilic:tree/dark_oak/modern",
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.2,
+          "feature": {
+            "feature": "geophilic:tree/dark_oak/slim",
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.1,
+          "feature": {
+            "feature": "geophilic:tree/oak/fancy",
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.05,
+          "feature": {
+            "feature": "geophilic:tree/oak/classic",
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.05,
+          "feature": {
+            "feature": "geophilic:tree/birch/classic",
+            "placement": []
+          }
+        }
+      ]
+    },
+    "type": "minecraft:random_selector"
+  },
+  "placement": [
+    {
+      "count": 24,
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "max_water_depth": 0,
+      "type": "minecraft:surface_water_depth_filter"
+    },
+    {
+      "heightmap": "OCEAN_FLOOR",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "predicate": {
+        "state": {
+          "Name": "minecraft:oak_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        },
+        "type": "minecraft:would_survive"
+      },
+      "type": "minecraft:block_predicate_filter"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

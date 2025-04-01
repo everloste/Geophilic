@@ -1,0 +1,52 @@
+{
+  "feature": {
+    "config": {
+      "default": {
+        "feature": "geophilic:fallen_log/spruce",
+        "placement": []
+      },
+      "features": [
+        {
+          "chance": 0.3,
+          "feature": {
+            "feature": "geophilic:tree_stump/spruce",
+            "placement": []
+          }
+        }
+      ]
+    },
+    "type": "minecraft:random_selector"
+  },
+  "placement": [
+    {
+      "chance": 8,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "MOTION_BLOCKING_NO_LEAVES",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "max_water_depth": 0,
+      "type": "minecraft:surface_water_depth_filter"
+    },
+    {
+      "predicate": {
+        "state": {
+          "Name": "minecraft:spruce_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        },
+        "type": "minecraft:would_survive"
+      },
+      "type": "minecraft:block_predicate_filter"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

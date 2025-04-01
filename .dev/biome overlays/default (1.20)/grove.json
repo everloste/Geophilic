@@ -1,0 +1,23 @@
+{
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:glow_lichen",
+      "geophilic:taiga/grove/trees",
+      "geophilic:common/tree_ornaments/spruce",
+      "geophilic:taiga/grove/logs",
+      "geophilic:common/mushrooms",
+      "geophilic:common/sugar_cane",
+      "geophilic:common/pumpkins"
+    ],
+    []
+  ]
+}

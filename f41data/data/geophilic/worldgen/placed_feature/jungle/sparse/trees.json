@@ -1,0 +1,42 @@
+{
+  "feature": {
+    "config": {
+      "default": "minecraft:jungle_tree",
+      "features": [
+        {
+          "chance": 0.18,
+          "feature": "minecraft:fancy_oak_checked"
+        },
+        {
+          "chance": 0.02,
+          "feature": "minecraft:mega_jungle_tree_checked"
+        }
+      ]
+    },
+    "type": "minecraft:random_selector"
+  },
+  "placement": [
+    {
+      "count": {
+        "max_inclusive": 4,
+        "min_inclusive": 1,
+        "type": "minecraft:biased_to_bottom"
+      },
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "max_water_depth": 0,
+      "type": "minecraft:surface_water_depth_filter"
+    },
+    {
+      "heightmap": "OCEAN_FLOOR",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

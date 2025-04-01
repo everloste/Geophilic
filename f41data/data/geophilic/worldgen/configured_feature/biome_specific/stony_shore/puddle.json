@@ -1,0 +1,17 @@
+{
+  "config": {
+    "contents": {
+      "Name": "minecraft:water"
+    },
+    "rim": {
+      "Name": "minecraft:stone"
+    },
+    "rim_size": 0,
+    "size": {
+      "max_inclusive": 5,
+      "min_inclusive": 4,
+      "type": "minecraft:biased_to_bottom"
+    }
+  },
+  "type": "minecraft:delta_feature"
+}
