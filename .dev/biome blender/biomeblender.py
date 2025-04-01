@@ -7,6 +7,14 @@ path = os.path.dirname(os.path.realpath(__file__))
 output_only = True
 
 
+if not os.path.exists(f"{path}/output"):
+	os.makedirs(f"{path}/output"); print("Created ./output.")
+if not os.path.exists(f"{path}/imported"):
+	os.makedirs(f"{path}/imported"); print("Created ./imported.")
+if not os.path.exists(f"{path}/imported_manual"):
+	os.makedirs(f"{path}/imported_manual"); print("Created ./imported_manual.")
+
+
 preferred_bases_directory = "imported_manual" # either this or "imported", gets modified later
 
 mc_source_directory = f"C:/Users/{os.getlogin()}/AppData/Roaming/PrismLauncher/libraries/com/mojang/minecraft"
