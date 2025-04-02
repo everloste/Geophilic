@@ -1,4 +1,4 @@
-# Geophilic
+![Cool logo.](https://i.imgur.com/yJbL99N.png) 
 
 ## Updating biome definitions
 Since biome definitions can (and do, especially nowadays) vary from minor version to minor version, Geophilic uses a script to create them automatically.
