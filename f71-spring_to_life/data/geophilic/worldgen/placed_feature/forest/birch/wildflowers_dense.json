@@ -191,7 +191,7 @@
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 8
+			"count": 12
 		},
 		{
 			"type": "minecraft:rarity_filter",
