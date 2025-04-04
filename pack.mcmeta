@@ -3,7 +3,28 @@
 		"name": "Geophilic",
 		"id": "geophilic",
 		"version": "3.4",
-		"description": "\u00A77Geophilic\u00A7r\nA biome overhaul data pack",
+		"description": [
+			{
+				"text": "Geophilic",
+				"color": "#4080ff"
+			},
+			{
+				"text": " v3.4",
+				"color": "#767676"
+			},
+			{
+				"text": "\nA ",
+				"color": "#767676"
+			},
+			{
+				"text": "biome overhaul ",
+				"color": "#979797"
+			},
+			{
+				"text": "data pack",
+				"color": "#767676"
+			}
+		],
 		"pack_format": 15,
 		"supported_formats": [
 			15,
