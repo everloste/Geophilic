@@ -71,6 +71,32 @@
 				"method": "dirt_patch_amount_plains"
 			},
 			{
+				"type": "slider",
+				"text": "Coarse dirt patch amount in the Savanna biome",
+				"value": {
+					"type": "percent",
+					"default": 100,
+					"range": [
+						0,
+						200
+					]
+				},
+				"method": "dirt_patch_amount_savanna"
+			},
+			{
+				"type": "slider",
+				"text": "Flower amount in the Meadow biome",
+				"value": {
+					"type": "percent",
+					"default": 100,
+					"range": [
+						0,
+						300
+					]
+				},
+				"method": "meadow_flower_amount"
+			},
+			{
 				"text": "Disable stone pillars in the Stony Shore biome",
 				"type": "switch",
 				"default": "disabled",
@@ -184,6 +210,31 @@
 							"data/geophilic/worldgen/placed_feature/plains/dirt_patches.json"
 						],
 						"value_path": "placement/0/noise_to_count_ratio"
+					}
+				]
+			},
+			"dirt_patch_amount_savanna": {
+				"transformer": "input",
+				"accessors": [
+					{
+						"method": "multiply_int",
+						"file_path": [
+							"data/geophilic/worldgen/placed_feature/savanna/dirt_patches.json"
+						],
+						"value_path": "placement/0/noise_to_count_ratio"
+					}
+				]
+			},
+			"meadow_flower_amount": {
+				"transformer": "input",
+				"accessors": [
+					{
+						"method": "multiply_int",
+						"file_path": [
+							"data/geophilic/worldgen/placed_feature/meadow/flowers.json",
+							"data/geophilic/worldgen/placed_feature/meadow/wildflowers.json"
+						],
+						"value_path": "placement/0/count"
 					}
 				]
 			},
