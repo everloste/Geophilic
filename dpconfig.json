@@ -1,0 +1,248 @@
+{
+	"config": {
+		"meta": {
+			"ver": 1,
+			"tab": "Configure Geophilic"
+		},
+		"widgets": [
+			{
+				"type": "title",
+				"text": "Geophilic Config"
+			},
+			{
+				"type": "image",
+				"file": "thumbnail.jpg",
+				"height": 200
+			},
+			{
+				"type": "heading",
+				"text": "Feature generation"
+			},
+			{
+				"type": "slider",
+				"text": "Grass density in flatland biomes (plains, meadows, and savannas)",
+				"value": {
+					"type": "percent",
+					"default": 100,
+					"range": [
+						50,
+						300
+					]
+				},
+				"method": "grass_amount_plains"
+			},
+			{
+				"type": "slider",
+				"text": "Grass density in forest biomes (forests and taigas)",
+				"value": {
+					"type": "percent",
+					"default": 100,
+					"range": [
+						50,
+						300
+					]
+				},
+				"method": "grass_amount_forests"
+			},
+			{
+				"type": "slider",
+				"text": "Boulder amount in the Plains biome",
+				"value": {
+					"type": "percent",
+					"default": 100,
+					"range": [
+						0,
+						200
+					]
+				},
+				"method": "boulder_amount_plains"
+			},
+			{
+				"type": "slider",
+				"text": "Coarse dirt patch amount in the Plains biome",
+				"value": {
+					"type": "percent",
+					"default": 100,
+					"range": [
+						0,
+						200
+					]
+				},
+				"method": "dirt_patch_amount_plains"
+			},
+			{
+				"text": "Disable stone pillars in the Stony Shore biome",
+				"type": "switch",
+				"default": "disabled",
+				"method": "stony_shore_features_toggle"
+			},
+			{
+				"type": "heading",
+				"text": "Trees"
+			},
+			{
+				"type": "slider",
+				"text": "Oak tree base height modifier",
+				"value": {
+					"type": "int",
+					"default": 0,
+					"range": [
+						-2,
+						4
+					]
+				},
+				"method": "oak_tree_height"
+			},
+			{
+				"type": "slider",
+				"text": "Birch tree base height modifier",
+				"value": {
+					"type": "int",
+					"default": 0,
+					"range": [
+						-2,
+						4
+					]
+				},
+				"method": "birch_tree_height"
+			},
+			{
+				"type": "slider",
+				"text": "Spruce tree base height modifier",
+				"value": {
+					"type": "int",
+					"default": 0,
+					"range": [
+						-2,
+						4
+					]
+				},
+				"method": "spruce_tree_height"
+			}
+		],
+		"methods": {
+			"spruce_tree_height": {
+				"transformer": "input",
+				"accessors": [
+					{
+						"method": "add_int",
+						"file_path": [
+							"data/geophilic/worldgen/configured_feature/tree/spruce/classic.json",
+							"data/geophilic/worldgen/configured_feature/tree/spruce/short.json",
+							"data/geophilic/worldgen/configured_feature/tree/spruce/tall.json",
+							"data/geophilic/worldgen/configured_feature/tree/spruce/young.json",
+							"data/geophilic/worldgen/configured_feature/tree/spruce/pine/normal.json"
+						],
+						"value_path": "config/trunk_placer/base_height"
+					}
+				]
+			},
+			"oak_tree_height": {
+				"transformer": "input",
+				"accessors": [
+					{
+						"method": "add_int",
+						"file_path": [
+							"data/geophilic/worldgen/configured_feature/tree/oak/classic.json",
+							"data/geophilic/worldgen/configured_feature/tree/oak/classic_double_bees.json",
+							"data/geophilic/worldgen/configured_feature/tree/oak/elder.json",
+							"data/geophilic/worldgen/configured_feature/tree/oak/fancy_bees.json",
+							"data/geophilic/worldgen/configured_feature/tree/oak/fancy_double_bees.json",
+							"data/geophilic/worldgen/configured_feature/tree/oak/fancy.json",
+							"data/geophilic/worldgen/configured_feature/tree/oak/tall.json",
+							"data/geophilic/worldgen/configured_feature/tree/oak/young.json"
+						],
+						"value_path": "config/trunk_placer/base_height"
+					}
+				]
+			},
+			"birch_tree_height": {
+				"transformer": "input",
+				"accessors": [
+					{
+						"method": "add_int",
+						"file_path": [
+							"data/geophilic/worldgen/configured_feature/tree/birch/classic.json",
+							"data/geophilic/worldgen/configured_feature/tree/birch/classic_double_bees.json",
+							"data/geophilic/worldgen/configured_feature/tree/birch/exp.json",
+							"data/geophilic/worldgen/configured_feature/tree/birch/exp2.json",
+							"data/geophilic/worldgen/configured_feature/tree/birch/meadow.json",
+							"data/geophilic/worldgen/configured_feature/tree/birch/tall_modified.json",
+							"data/geophilic/worldgen/configured_feature/tree/birch/tall.json",
+							"data/geophilic/worldgen/configured_feature/tree/birch/young.json"
+						],
+						"value_path": "config/trunk_placer/base_height"
+					}
+				]
+			},
+			"dirt_patch_amount_plains": {
+				"transformer": "input",
+				"accessors": [
+					{
+						"method": "multiply_int",
+						"file_path": [
+							"data/geophilic/worldgen/placed_feature/plains/dirt_patches.json"
+						],
+						"value_path": "placement/0/noise_to_count_ratio"
+					}
+				]
+			},
+			"boulder_amount_plains": {
+				"transformer": "input",
+				"accessors": [
+					{
+						"method": "multiply_int",
+						"file_path": [
+							"data/geophilic/worldgen/placed_feature/plains/rocks.json"
+						],
+						"value_path": "placement/1/count"
+					}
+				]
+			},
+			"grass_amount_plains": {
+				"transformer": "input",
+				"accessors": [
+					{
+						"method": "multiply_int",
+						"file_path": [
+							"data/geophilic/worldgen/placed_feature/common/grass/plains.json",
+							"data/geophilic/worldgen/placed_feature/common/grass/meadow.json",
+							"data/geophilic/worldgen/placed_feature/common/grass/savanna.json"
+						],
+						"value_path": "placement/0/count"
+					}
+				]
+			},
+			"grass_amount_forests": {
+				"transformer": "input",
+				"accessors": [
+					{
+						"method": "multiply_int",
+						"file_path": [
+							"data/geophilic/worldgen/placed_feature/common/grass/forest.json",
+							"data/geophilic/worldgen/placed_feature/common/grass/taiga.json",
+							"data/geophilic/worldgen/placed_feature/common/grass/jungle.json"
+						],
+						"value_path": "placement/0/count"
+					}
+				]
+			},
+			"stony_shore_features_toggle": {
+				"accessors": [
+					{
+						"method": "remove",
+						"transformer": "geophilic:stony_shore/pillars/large",
+						"file_path": "data/minecraft/worldgen/biome/stony_shore.json",
+						"value_path": "features/5"
+					},
+					{
+						"method": "remove",
+						"transformer": "geophilic:stony_shore/pillars/small",
+						"file_path": "data/minecraft/worldgen/biome/stony_shore.json",
+						"value_path": "features/5"
+					}
+				]
+			}
+		}
+	}
+}
