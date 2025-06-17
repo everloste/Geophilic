@@ -2,7 +2,7 @@
 	"pack": {
 		"name": "Geophilic",
 		"id": "geophilic",
-		"version": "3.4.1",
+		"version": "3.4.2",
 		"description": [
 			{
 				"text": "Geophilic",
@@ -28,7 +28,7 @@
 		"pack_format": 15,
 		"supported_formats": [
 			15,
-			71
+			80
 		]
 	},
 	"overlays": {
