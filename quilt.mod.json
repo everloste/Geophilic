@@ -3,7 +3,7 @@
   "quilt_loader": {
     "id": "geophilic",
     "group": "bebebea_loste",
-    "version": "3.4.2",
+    "version": "3.4.3",
     "metadata": {
       "name": "Geophilic",
       "description": "A subtle-ish overhaul of vanilla Overworld biomes.",
