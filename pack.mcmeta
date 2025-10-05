@@ -2,7 +2,7 @@
 	"pack": {
 		"name": "Geophilic",
 		"id": "geophilic",
-		"version": "3.4.3",
+		"version": "3.4.4",
 		"description": [
 			{
 				"text": "Geophilic",
@@ -28,8 +28,10 @@
 		"pack_format": 15,
 		"supported_formats": [
 			15,
-			81
-		]
+			88
+		],
+		"min_format": 15,
+		"max_format": 88
 	},
 	"overlays": {
 		"entries": [
@@ -38,6 +40,8 @@
 					26,
 					512
 				],
+				"min_format": 26,
+				"max_format": 512,
 				"directory": "f26data"
 			},
 			{
@@ -45,6 +49,8 @@
 					41,
 					512
 				],
+				"min_format": 41,
+				"max_format": 512,
 				"directory": "f41data"
 			},
 			{
@@ -52,6 +58,8 @@
 					61,
 					512
 				],
+				"min_format": 61,
+				"max_format": 512,
 				"directory": "f61-pale_garden"
 			},
 			{
@@ -59,6 +67,8 @@
 					71,
 					512
 				],
+				"min_format": 71,
+				"max_format": 512,
 				"directory": "f71-spring_to_life"
 			},
 			{
@@ -66,6 +76,8 @@
 					18,
 					26
 				],
+				"min_format": 18,
+				"max_format": 26,
 				"directory": "biomes_1_20_2"
 			},
 			{
@@ -73,6 +85,8 @@
 					41,
 					41
 				],
+				"min_format": 41,
+				"max_format": 41,
 				"directory": "biomes_1_20_5"
 			},
 			{
@@ -80,6 +94,8 @@
 					48,
 					48
 				],
+				"min_format": 48,
+				"max_format": 48,
 				"directory": "biomes_1_21"
 			},
 			{
@@ -87,6 +103,8 @@
 					57,
 					57
 				],
+				"min_format": 57,
+				"max_format": 57,
 				"directory": "biomes_1_21_2"
 			},
 			{
@@ -94,6 +112,8 @@
 					61,
 					512
 				],
+				"min_format": 61,
+				"max_format": 512,
 				"directory": "biomes_1_21_4"
 			},
 			{
@@ -101,6 +121,8 @@
 					71,
 					512
 				],
+				"min_format": 71,
+				"max_format": 512,
 				"directory": "biomes_1_21_5"
 			}
 		]
