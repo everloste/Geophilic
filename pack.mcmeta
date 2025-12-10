@@ -2,7 +2,7 @@
 	"pack": {
 		"name": "Geophilic",
 		"id": "geophilic",
-		"version": "3.4.4",
+		"version": "3.4.5",
 		"description": [
 			{
 				"text": "Geophilic",
@@ -28,10 +28,10 @@
 		"pack_format": 15,
 		"supported_formats": [
 			15,
-			88
+			94
 		],
 		"min_format": 15,
-		"max_format": 88
+		"max_format": 94
 	},
 	"overlays": {
 		"entries": [
@@ -124,6 +124,15 @@
 				"min_format": 71,
 				"max_format": 512,
 				"directory": "biomes_1_21_5"
+			},
+			{
+				"formats": [
+					94,
+					512
+				],
+				"min_format": 94,
+				"max_format": 512,
+				"directory": "biomes_1_21_11"
 			}
 		]
 	}

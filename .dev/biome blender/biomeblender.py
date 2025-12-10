@@ -17,10 +17,10 @@ if not os.path.exists(f"{path}/imported_manual"):
 
 preferred_bases_directory = "imported_manual" # either this or "imported", gets modified later
 
-mc_source_directory = f"C:/Users/{os.getlogin()}/AppData/Roaming/PrismLauncher/libraries/com/mojang/minecraft"
+mc_source_directory = f"/home/{os.getlogin()}/.local/share/PrismLauncher/libraries/com/mojang/minecraft/"
 output_path = f"{path}/output/"
 
-overlays_path = "/".join(f"{path}".split("\\")[:-2]) + "/.dev/biome overlays/1.21.5"
+overlays_path = "/".join(f"{path}".split("/")[:-2]) + "/.dev/biome overlays/1.21.5"
 overlays = os.listdir(overlays_path)
 
 

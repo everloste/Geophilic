@@ -6,7 +6,7 @@ showAsDataPack=true
 
 [[mods]]
 	modId="geophilic"
-	version="3.4.4"
+	version="3.4.5"
 	displayName="Geophilic"
 	displayURL="https://modrinth.com/datapack/geophilic"
 	logoFile="pack.png"
