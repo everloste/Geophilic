@@ -1,0 +1,21 @@
+{
+  "config": {
+    "half_height": 1,
+    "radius": {
+      "max_inclusive": 7,
+      "min_inclusive": 3,
+      "type": "minecraft:uniform"
+    },
+    "state_provider": {
+      "state": {
+        "Name": "minecraft:mud"
+      },
+      "type": "minecraft:simple_state_provider"
+    },
+    "target": {
+      "tag": "minecraft:substrate_overworld",
+      "type": "minecraft:matching_block_tag"
+    }
+  },
+  "type": "minecraft:disk"
+}

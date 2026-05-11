@@ -1,0 +1,100 @@
+{
+  "feature": "geophilic:biome_specific/savanna/dirt_mound",
+  "placement": [
+    {
+      "count": {
+        "max_inclusive": 2,
+        "min_inclusive": 1,
+        "type": "minecraft:biased_to_bottom"
+      },
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "MOTION_BLOCKING_NO_LEAVES",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "predicate": {
+        "predicates": [
+          {
+            "blocks": "minecraft:coarse_dirt",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "type": "minecraft:matching_blocks"
+          },
+          {
+            "blocks": "minecraft:coarse_dirt",
+            "offset": [
+              1,
+              -1,
+              0
+            ],
+            "type": "minecraft:matching_blocks"
+          },
+          {
+            "blocks": "minecraft:coarse_dirt",
+            "offset": [
+              -1,
+              -1,
+              0
+            ],
+            "type": "minecraft:matching_blocks"
+          },
+          {
+            "blocks": "minecraft:coarse_dirt",
+            "offset": [
+              0,
+              -1,
+              1
+            ],
+            "type": "minecraft:matching_blocks"
+          },
+          {
+            "blocks": "minecraft:coarse_dirt",
+            "offset": [
+              0,
+              -1,
+              -1
+            ],
+            "type": "minecraft:matching_blocks"
+          }
+        ],
+        "type": "minecraft:all_of"
+      },
+      "type": "minecraft:block_predicate_filter"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:count",
+      "count": 6
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "minecraft:trapezoid",
+        "max": 0,
+        "min": 0,
+        "plateau": 0
+      },
+      "y_spread": {
+        "type": "minecraft:trapezoid",
+        "max": 3,
+        "min": -3,
+        "plateau": 0
+      }
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 0,
+      "y_spread": 2
+    }
+  ]
+}

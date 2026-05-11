@@ -1,0 +1,54 @@
+{
+  "feature": "geophilic:biome_specific/cherry_grove/pond",
+  "placement": [
+    {
+      "count": {
+        "distribution": [
+          {
+            "data": {
+              "max_inclusive": 2,
+              "min_inclusive": 0,
+              "type": "minecraft:biased_to_bottom"
+            },
+            "weight": 1
+          }
+        ],
+        "type": "minecraft:weighted_list"
+      },
+      "type": "minecraft:count"
+    },
+    {
+      "chance": 32,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "OCEAN_FLOOR",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:count",
+      "count": 12
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "minecraft:trapezoid",
+        "max": 4,
+        "min": -4,
+        "plateau": 0
+      },
+      "y_spread": {
+        "type": "minecraft:trapezoid",
+        "max": 1,
+        "min": -1,
+        "plateau": 0
+      }
+    }
+  ]
+}

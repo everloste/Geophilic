@@ -2,14 +2,14 @@
 	"pack": {
 		"name": "Geophilic",
 		"id": "geophilic",
-		"version": "3.4.5",
+		"version": "3.5",
 		"description": [
 			{
 				"text": "Geophilic",
 				"color": "#4080ff"
 			},
 			{
-				"text": " v3.4",
+				"text": " v3.5",
 				"color": "#767676"
 			},
 			{
@@ -28,10 +28,10 @@
 		"pack_format": 15,
 		"supported_formats": [
 			15,
-			94
+			101
 		],
 		"min_format": 15,
-		"max_format": 94
+		"max_format": 101
 	},
 	"overlays": {
 		"entries": [
@@ -70,6 +70,15 @@
 				"min_format": 71,
 				"max_format": 512,
 				"directory": "f71-spring_to_life"
+			},
+			{
+				"formats": [
+					101,
+					512
+				],
+				"min_format": 101,
+				"max_format": 512,
+				"directory": "f101-2026-1"
 			},
 			{
 				"formats": [

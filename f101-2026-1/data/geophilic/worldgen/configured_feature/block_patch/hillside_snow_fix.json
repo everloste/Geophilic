@@ -1,0 +1,71 @@
+{
+  "config": {
+    "depth": 1,
+    "extra_bottom_block_chance": 0,
+    "extra_edge_column_chance": 0,
+    "ground_state": {
+      "state": {
+        "Name": "minecraft:snow_block"
+      },
+      "type": "minecraft:simple_state_provider"
+    },
+    "replaceable": "#minecraft:snow",
+    "surface": "floor",
+    "vegetation_chance": 1,
+    "vegetation_feature": {
+      "feature": {
+        "config": {
+          "to_place": {
+            "state": {
+              "Name": "minecraft:snow_block"
+            },
+            "type": "minecraft:simple_state_provider"
+          }
+        },
+        "type": "minecraft:simple_block"
+      },
+      "placement": [
+        {
+          "direction_of_search": "down",
+          "max_steps": 32,
+          "target_condition": {
+            "blocks": "minecraft:snow_block",
+            "type": "minecraft:matching_blocks"
+          },
+          "type": "minecraft:environment_scan"
+        },
+        {
+          "predicate": {
+            "tag": "minecraft:snow",
+            "type": "minecraft:matching_block_tag"
+          },
+          "type": "minecraft:block_predicate_filter"
+        },
+        {
+          "type": "minecraft:count",
+          "count": 16
+        },
+        {
+          "type": "minecraft:random_offset",
+          "xz_spread": 0,
+          "y_spread": {
+            "type": "minecraft:trapezoid",
+            "max": 2,
+            "min": -2,
+            "plateau": 0
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_block_tag",
+            "tag": "minecraft:substrate_overworld"
+          }
+        }
+      ]
+    },
+    "vertical_range": 256,
+    "xz_radius": 16
+  },
+  "type": "minecraft:vegetation_patch"
+}

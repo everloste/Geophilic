@@ -1,0 +1,71 @@
+{
+  "feature": "geophilic:block_patch/coarse_dirt",
+  "placement": [
+    {
+      "noise_factor": 96,
+      "noise_to_count_ratio": 3,
+      "type": "minecraft:noise_based_count"
+    },
+    {
+      "count": {
+        "max_inclusive": 2,
+        "min_inclusive": 0,
+        "type": "minecraft:biased_to_bottom"
+      },
+      "type": "minecraft:count"
+    },
+    {
+      "count": {
+        "max_inclusive": 1,
+        "min_inclusive": 0,
+        "type": "minecraft:biased_to_bottom"
+      },
+      "type": "minecraft:count"
+    },
+    {
+      "count": {
+        "max_inclusive": 3,
+        "min_inclusive": 0,
+        "type": "minecraft:biased_to_bottom"
+      },
+      "type": "minecraft:count"
+    },
+    {
+      "count": {
+        "max_inclusive": 2,
+        "min_inclusive": 1,
+        "type": "minecraft:biased_to_bottom"
+      },
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "WORLD_SURFACE_WG",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:count",
+      "count": 18
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "minecraft:trapezoid",
+        "max": 4,
+        "min": -4,
+        "plateau": 0
+      },
+      "y_spread": {
+        "type": "minecraft:trapezoid",
+        "max": 1,
+        "min": -1,
+        "plateau": 0
+      }
+    }
+  ]
+}
