@@ -1,0 +1,15 @@
+{
+	"replace": false,
+	"values": {
+		"minecraft:cherry_grove": [
+			{
+				"feature": "geophilic:tree/cherry/classic",
+				"weight": 90
+			},
+			{
+				"feature": "geophilic:tree/cherry/big",
+				"weight": 10
+			}
+		]
+	}
+}

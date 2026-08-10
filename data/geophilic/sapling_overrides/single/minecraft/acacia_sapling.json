@@ -1,0 +1,47 @@
+{
+	"replace": false,
+	"values": {
+		"minecraft:savanna": [
+			{
+				"feature": "geophilic:tree/acacia/modified",
+				"weight": 44
+			},
+			{
+				"feature": "geophilic:tree/acacia/classic",
+				"weight": 29
+			},
+			{
+				"feature": "geophilic:tree/acacia/modified_2",
+				"weight": 27
+			}
+		],
+		"minecraft:savanna_plateau": [
+			{
+				"feature": "geophilic:tree/acacia/modified",
+				"weight": 44
+			},
+			{
+				"feature": "geophilic:tree/acacia/classic",
+				"weight": 29
+			},
+			{
+				"feature": "geophilic:tree/acacia/modified_2",
+				"weight": 27
+			}
+		],
+		"minecraft:windswept_savanna": [
+			{
+				"feature": "geophilic:tree/acacia/modified_2",
+				"weight": 36
+			},
+			{
+				"feature": "geophilic:tree/acacia/modified",
+				"weight": 34
+			},
+			{
+				"feature": "geophilic:tree/acacia/classic",
+				"weight": 30
+			}
+		]
+	}
+}

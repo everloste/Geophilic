@@ -1,0 +1,59 @@
+{
+	"replace": false,
+	"values": {
+		"minecraft:birch_forest": [
+			{
+				"feature": "geophilic:tree/birch/classic",
+				"weight": 81
+			},
+			{
+				"feature": "geophilic:tree/birch/tall",
+				"weight": 10
+			},
+			{
+				"feature": "geophilic:tree/birch/young",
+				"weight": 9
+			}
+		],
+		"minecraft:dark_forest": "geophilic:tree/birch/classic",
+		"minecraft:flower_forest": [
+			{
+				"feature": "geophilic:tree/birch/classic_double_bees",
+				"weight": 97
+			},
+			{
+				"feature": "geophilic:tree/birch/young",
+				"weight": 3
+			}
+		],
+		"minecraft:forest": [
+			{
+				"feature": "geophilic:tree/birch/classic",
+				"weight": 98
+			},
+			{
+				"feature": "geophilic:tree/birch/young",
+				"weight": 2
+			}
+		],
+		"minecraft:meadow": "geophilic:tree/birch/meadow",
+		"minecraft:old_growth_birch_forest": [
+			{
+				"feature": "geophilic:tree/birch/tall",
+				"weight": 68
+			},
+			{
+				"feature": "geophilic:tree/birch/tall_modified",
+				"weight": 20
+			},
+			{
+				"feature": "geophilic:tree/birch/classic",
+				"weight": 8
+			},
+			{
+				"feature": "geophilic:tree/birch/young",
+				"weight": 4
+			}
+		]
+	}
+}

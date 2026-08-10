@@ -1,0 +1,128 @@
+{
+	"replace": false,
+	"values": {
+		"minecraft:dark_forest": [
+			{
+				"feature": "geophilic:tree/oak/fancy",
+				"weight": 69
+			},
+			{
+				"feature": "geophilic:tree/oak/classic",
+				"weight": 31
+			}
+		],
+		"minecraft:flower_forest": [
+			{
+				"feature": "geophilic:tree/oak/classic_double_bees",
+				"weight": 85
+			},
+			{
+				"feature": "geophilic:tree/oak/fancy_double_bees",
+				"weight": 10
+			},
+			{
+				"feature": "geophilic:tree/oak/young",
+				"weight": 5
+			}
+		],
+		"minecraft:forest": [
+			{
+				"feature": "geophilic:tree/oak/classic",
+				"weight": 57
+			},
+			{
+				"feature": "geophilic:tree/oak/fancy",
+				"weight": 40
+			},
+			{
+				"feature": "geophilic:tree/oak/young",
+				"weight": 3
+			}
+		],
+		"minecraft:meadow": "geophilic:tree/oak/fancy_bees",
+		"minecraft:plains": [
+			{
+				"feature": "geophilic:tree/oak/classic",
+				"weight": 44
+			},
+			{
+				"feature": "geophilic:bush/oak",
+				"weight": 30
+			},
+			{
+				"feature": "geophilic:tree/oak/fancy",
+				"weight": 19
+			},
+			{
+				"feature": "geophilic:tree/oak/young",
+				"weight": 7
+			}
+		],
+		"minecraft:savanna": "geophilic:tree/oak/classic",
+		"minecraft:savanna_plateau": "geophilic:tree/oak/classic",
+		"minecraft:sunflower_plains": [
+			{
+				"feature": "geophilic:tree/oak/classic",
+				"weight": 44
+			},
+			{
+				"feature": "geophilic:bush/oak",
+				"weight": 30
+			},
+			{
+				"feature": "geophilic:tree/oak/fancy",
+				"weight": 19
+			},
+			{
+				"feature": "geophilic:tree/oak/young",
+				"weight": 7
+			}
+		],
+		"minecraft:swamp": [
+			{
+				"feature": "geophilic:tree/oak/swamp/modern",
+				"weight": 56
+			},
+			{
+				"feature": "geophilic:tree/oak/swamp/young",
+				"weight": 24
+			},
+			{
+				"feature": "geophilic:tree/oak/swamp/classic",
+				"weight": 20
+			}
+		],
+		"minecraft:windswept_forest": [
+			{
+				"feature": "geophilic:tree/oak/classic",
+				"weight": 90
+			},
+			{
+				"feature": "geophilic:tree/oak/fancy",
+				"weight": 10
+			}
+		],
+		"minecraft:windswept_gravelly_hills": [
+			{
+				"feature": "geophilic:tree/oak/classic",
+				"weight": 90
+			},
+			{
+				"feature": "geophilic:tree/oak/fancy",
+				"weight": 10
+			}
+		],
+		"minecraft:windswept_hills": [
+			{
+				"feature": "geophilic:tree/oak/classic",
+				"weight": 90
+			},
+			{
+				"feature": "geophilic:tree/oak/fancy",
+				"weight": 10
+			}
+		],
+		"minecraft:windswept_savanna": "geophilic:tree/oak/classic",
+		"minecraft:wooded_badlands": "geophilic:tree/oak/classic"
+	}
+}

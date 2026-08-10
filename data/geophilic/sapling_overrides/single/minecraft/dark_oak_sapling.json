@@ -1,0 +1,7 @@
+{
+	"replace": false,
+	"values": {
+		"minecraft:dark_forest": "geophilic:tree/dark_oak/slim",
+		"treeplacer:all_biomes": "geophilic:tree/dark_oak/slim"
+	}
+}
