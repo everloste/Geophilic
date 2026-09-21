@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:block_column",
+  "allowed_placement": {
+    "type": "minecraft:true"
+  },
+  "direction": "up",
+  "layers": [
+    {
+      "height": {
+        "max_inclusive": 10,
+        "min_inclusive": 3,
+        "type": "minecraft:biased_to_bottom"
+      },
+      "provider": {
+        "state": {
+          "id": "minecraft:stone"
+        },
+        "type": "minecraft:simple"
+      }
+    }
+  ],
+  "prioritize_tip": false
+}

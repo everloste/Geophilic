@@ -1,0 +1,117 @@
+{
+  "type": "minecraft:tree",
+  "decorators": [
+    {
+      "probability": 0.2,
+      "type": "minecraft:leave_vine"
+    }
+  ],
+  "foliage_placer": {
+    "height": 3,
+    "offset": 2,
+    "radius": {
+      "max_inclusive": 3,
+      "min_inclusive": 2,
+      "type": "minecraft:biased_to_bottom"
+    },
+    "type": "minecraft:fancy_foliage_placer"
+  },
+  "foliage_provider": {
+    "state": {
+      "id": "minecraft:oak_leaves",
+      "properties": {
+        "distance": "7",
+        "persistent": "false",
+        "waterlogged": "false"
+      }
+    },
+    "type": "minecraft:simple"
+  },
+  "force_dirt": false,
+  "ignore_vines": false,
+  "minimum_size": {
+    "limit": 1,
+    "lower_size": 0,
+    "type": "minecraft:two_layers_feature_size",
+    "upper_size": 1
+  },
+  "root_placer": {
+    "above_root_placement": {
+      "above_root_placement_chance": 0.5,
+      "above_root_provider": {
+        "state": {
+          "id": "minecraft:moss_carpet"
+        },
+        "type": "minecraft:simple"
+      }
+    },
+    "mangrove_root_placement": {
+      "can_grow_through": "#minecraft:mangrove_roots_can_grow_through",
+      "max_root_length": 5,
+      "max_root_width": 3,
+      "muddy_roots_in": "#minecraft:substrate_overworld",
+      "muddy_roots_provider": {
+        "state": {
+          "id": "minecraft:oak_log",
+          "properties": {
+            "axis": "y"
+          }
+        },
+        "type": "minecraft:simple"
+      },
+      "random_skew_chance": 0.3
+    },
+    "root_provider": {
+      "state": {
+        "id": "minecraft:oak_log",
+        "properties": {
+          "axis": "y"
+        }
+      },
+      "type": "minecraft:simple"
+    },
+    "trunk_offset_y": 1,
+    "type": "minecraft:mangrove_root_placer"
+  },
+  "trunk_placer": {
+    "base_height": 5,
+    "bend_length": {
+      "max_inclusive": 2,
+      "min_inclusive": 1,
+      "type": "minecraft:biased_to_bottom"
+    },
+    "height_rand_a": 1,
+    "height_rand_b": 2,
+    "min_height_for_leaves": 5,
+    "type": "minecraft:bending_trunk_placer"
+  },
+  "trunk_provider": {
+    "state": {
+      "id": "minecraft:oak_log",
+      "properties": {
+        "axis": "y"
+      }
+    },
+    "type": "minecraft:simple"
+  },
+  "below_trunk_provider": {
+    "type": "minecraft:rule_based",
+    "rules": [
+      {
+        "if_true": {
+          "type": "minecraft:not",
+          "predicate": {
+            "type": "minecraft:matching_block_tag",
+            "tag": "minecraft:cannot_replace_below_tree_trunk"
+          }
+        },
+        "then": {
+          "state": {
+            "id": "minecraft:dirt"
+          },
+          "type": "minecraft:simple"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "depth": 1,
+  "extra_bottom_block_chance": 0,
+  "extra_edge_column_chance": 0.5,
+  "ground_state": {
+    "state": {
+      "id": "minecraft:coarse_dirt"
+    },
+    "type": "minecraft:simple"
+  },
+  "replaceable": "#minecraft:substrate_overworld",
+  "surface": "floor",
+  "vegetation_chance": 1,
+  "vegetation_feature": {
+    "feature": {
+      "type": "minecraft:simple_block",
+      "to_place": {
+        "state": {
+          "id": "minecraft:coarse_dirt"
+        },
+        "type": "minecraft:simple"
+      }
+    },
+    "placement": []
+  },
+  "vertical_range": 1,
+  "xz_radius": {
+    "max_inclusive": 1,
+    "min_inclusive": 0,
+    "type": "minecraft:biased_to_bottom"
+  }
+}

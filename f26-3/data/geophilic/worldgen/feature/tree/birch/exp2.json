@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:tree",
+  "decorators": [
+    {
+      "probability": 0.002,
+      "type": "minecraft:beehive"
+    }
+  ],
+  "foliage_placer": {
+    "offset": 1,
+    "radius": 2,
+    "trunk_height": {
+      "max_inclusive": 5,
+      "min_inclusive": 4,
+      "type": "minecraft:uniform"
+    },
+    "type": "minecraft:spruce_foliage_placer"
+  },
+  "foliage_provider": {
+    "state": {
+      "id": "minecraft:birch_leaves",
+      "properties": {
+        "distance": "7",
+        "persistent": "false",
+        "waterlogged": "false"
+      }
+    },
+    "type": "minecraft:simple"
+  },
+  "force_dirt": false,
+  "ignore_vines": true,
+  "minimum_size": {
+    "limit": 1,
+    "lower_size": 0,
+    "type": "minecraft:two_layers_feature_size",
+    "upper_size": 1
+  },
+  "trunk_placer": {
+    "base_height": 8,
+    "height_rand_a": 2,
+    "height_rand_b": 4,
+    "type": "minecraft:straight_trunk_placer"
+  },
+  "trunk_provider": {
+    "state": {
+      "id": "minecraft:birch_log",
+      "properties": {
+        "axis": "y"
+      }
+    },
+    "type": "minecraft:simple"
+  },
+  "below_trunk_provider": {
+    "type": "minecraft:rule_based",
+    "rules": [
+      {
+        "if_true": {
+          "type": "minecraft:not",
+          "predicate": {
+            "type": "minecraft:matching_block_tag",
+            "tag": "minecraft:cannot_replace_below_tree_trunk"
+          }
+        },
+        "then": {
+          "state": {
+            "id": "minecraft:dirt"
+          },
+          "type": "minecraft:simple"
+        }
+      }
+    ]
+  }
+}

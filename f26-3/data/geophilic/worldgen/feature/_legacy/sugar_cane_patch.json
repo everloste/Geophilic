@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:block_column",
+  "allowed_placement": {
+    "blocks": "minecraft:air",
+    "type": "minecraft:matching_blocks"
+  },
+  "direction": "up",
+  "layers": [
+    {
+      "height": {
+        "max_inclusive": 4,
+        "min_inclusive": 2,
+        "type": "minecraft:biased_to_bottom"
+      },
+      "provider": {
+        "state": {
+          "id": "minecraft:sugar_cane",
+          "properties": {
+            "age": "0"
+          }
+        },
+        "type": "minecraft:simple"
+      }
+    }
+  ],
+  "prioritize_tip": false
+}

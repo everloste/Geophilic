@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:simple_block",
+  "to_place": {
+    "state": {
+      "id": "minecraft:sunflower",
+      "properties": {
+        "half": "lower"
+      }
+    },
+    "type": "minecraft:simple"
+  }
+}
