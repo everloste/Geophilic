@@ -1,0 +1,83 @@
+{
+  "type": "minecraft:random_selector",
+  "default": {
+    "feature": {
+      "type": "minecraft:block_blob",
+      "can_place_on": {
+        "type": "minecraft:matching_block_tag",
+        "tag": "minecraft:forest_rock_can_place_on"
+      },
+      "state": {
+        "id": "minecraft:stone"
+      }
+    },
+    "placement": []
+  },
+  "features": [
+    {
+      "chance": 0.5,
+      "feature": {
+        "feature": {
+          "type": "minecraft:simple_block",
+          "to_place": {
+            "entries": [
+              {
+                "data": {
+                  "id": "minecraft:cobblestone"
+                },
+                "weight": 4
+              },
+              {
+                "data": {
+                  "id": "minecraft:coal_ore"
+                },
+                "weight": 3
+              },
+              {
+                "data": {
+                  "id": "minecraft:copper_ore"
+                },
+                "weight": 2
+              }
+            ],
+            "type": "minecraft:weighted"
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:count",
+            "count": 16
+          },
+          {
+            "type": "minecraft:offset",
+            "x": {
+              "type": "minecraft:trapezoid",
+              "max": 2,
+              "min": -2,
+              "plateau": 0
+            },
+            "z": {
+              "type": "minecraft:trapezoid",
+              "max": 2,
+              "min": -2,
+              "plateau": 0
+            },
+            "y": {
+              "type": "minecraft:trapezoid",
+              "max": 2,
+              "min": -2,
+              "plateau": 0
+            }
+          },
+          {
+            "predicate": {
+              "blocks": "minecraft:stone",
+              "type": "minecraft:matching_blocks"
+            },
+            "type": "minecraft:block_predicate_filter"
+          }
+        ]
+      }
+    }
+  ]
+}

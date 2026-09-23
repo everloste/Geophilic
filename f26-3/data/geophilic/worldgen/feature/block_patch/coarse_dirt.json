@@ -1,0 +1,74 @@
+{
+  "type": "minecraft:random_selector",
+  "default": {
+    "feature": {
+      "type": "minecraft:disk",
+      "half_height": 1,
+      "radius": {
+        "max_inclusive": 3,
+        "min_inclusive": 1,
+        "type": "minecraft:biased_to_bottom"
+      },
+      "state_provider": {
+        "state": {
+          "id": "minecraft:coarse_dirt"
+        },
+        "type": "minecraft:simple"
+      },
+      "target": {
+        "tag": "minecraft:substrate_overworld",
+        "type": "minecraft:matching_block_tag"
+      }
+    },
+    "placement": []
+  },
+  "features": [
+    {
+      "chance": 0.4,
+      "feature": {
+        "feature": {
+          "type": "minecraft:disk",
+          "half_height": 1,
+          "radius": {
+            "max_inclusive": 2,
+            "min_inclusive": 1,
+            "type": "minecraft:biased_to_bottom"
+          },
+          "state_provider": {
+            "fallback": {
+              "state": {
+                "id": "minecraft:dirt"
+              },
+              "type": "minecraft:simple"
+            },
+            "type": "minecraft:rule_based",
+            "rules": [
+              {
+                "if_true": {
+                  "blocks": "minecraft:air",
+                  "offset": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "type": "minecraft:matching_blocks"
+                },
+                "then": {
+                  "state": {
+                    "id": "minecraft:grass_block"
+                  },
+                  "type": "minecraft:simple"
+                }
+              }
+            ]
+          },
+          "target": {
+            "blocks": "minecraft:coarse_dirt",
+            "type": "minecraft:matching_blocks"
+          }
+        },
+        "placement": []
+      }
+    }
+  ]
+}

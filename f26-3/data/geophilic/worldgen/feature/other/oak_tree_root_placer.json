@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "features": [
+    {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "to_place": {
+          "state": {
+            "id": "minecraft:oak_log",
+            "properties": {
+              "axis": "y"
+            }
+          },
+          "type": "minecraft:simple"
+        }
+      },
+      "placement": [
+        {
+          "predicate": {
+            "predicates": [
+              {
+                "blocks": "minecraft:oak_log",
+                "offset": [
+                  1,
+                  1,
+                  0
+                ],
+                "type": "minecraft:matching_blocks"
+              },
+              {
+                "blocks": "minecraft:oak_log",
+                "offset": [
+                  -1,
+                  1,
+                  0
+                ],
+                "type": "minecraft:matching_blocks"
+              },
+              {
+                "blocks": "minecraft:oak_log",
+                "offset": [
+                  0,
+                  1,
+                  1
+                ],
+                "type": "minecraft:matching_blocks"
+              },
+              {
+                "blocks": "minecraft:oak_log",
+                "offset": [
+                  0,
+                  1,
+                  -1
+                ],
+                "type": "minecraft:matching_blocks"
+              }
+            ],
+            "type": "minecraft:any_of"
+          },
+          "type": "minecraft:block_predicate_filter"
+        }
+      ]
+    }
+  ]
+}

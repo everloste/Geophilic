@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:tree",
+  "decorators": [],
+  "foliage_placer": {
+    "offset": {
+      "max_inclusive": 2,
+      "min_inclusive": 0,
+      "type": "minecraft:uniform"
+    },
+    "radius": {
+      "max_inclusive": 3,
+      "min_inclusive": 2,
+      "type": "minecraft:uniform"
+    },
+    "trunk_height": {
+      "max_inclusive": 4,
+      "min_inclusive": 2,
+      "type": "minecraft:uniform"
+    },
+    "type": "minecraft:spruce_foliage_placer"
+  },
+  "foliage_provider": {
+    "state": {
+      "id": "minecraft:spruce_leaves",
+      "properties": {
+        "distance": "7",
+        "persistent": "false",
+        "waterlogged": "false"
+      }
+    },
+    "type": "minecraft:simple"
+  },
+  "force_dirt": false,
+  "ignore_vines": true,
+  "minimum_size": {
+    "limit": 2,
+    "lower_size": 0,
+    "type": "minecraft:two_layers_feature_size",
+    "upper_size": 2
+  },
+  "trunk_placer": {
+    "base_height": 5,
+    "height_rand_a": 1,
+    "height_rand_b": 3,
+    "type": "minecraft:straight_trunk_placer"
+  },
+  "trunk_provider": {
+    "state": {
+      "id": "minecraft:spruce_log",
+      "properties": {
+        "axis": "y"
+      }
+    },
+    "type": "minecraft:simple"
+  },
+  "below_trunk_provider": {
+    "type": "minecraft:rule_based",
+    "rules": [
+      {
+        "if_true": {
+          "type": "minecraft:not",
+          "predicate": {
+            "type": "minecraft:matching_block_tag",
+            "tag": "minecraft:cannot_replace_below_tree_trunk"
+          }
+        },
+        "then": {
+          "state": {
+            "id": "minecraft:dirt"
+          },
+          "type": "minecraft:simple"
+        }
+      }
+    ]
+  }
+}

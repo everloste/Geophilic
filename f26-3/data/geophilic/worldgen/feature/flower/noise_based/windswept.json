@@ -1,0 +1,185 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "features": [
+    {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "to_place": {
+          "state": {
+            "id": "minecraft:allium"
+          },
+          "type": "minecraft:simple"
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:count",
+          "count": 8
+        },
+        {
+          "type": "minecraft:offset",
+          "x": {
+            "type": "minecraft:trapezoid",
+            "max": 3,
+            "min": -3,
+            "plateau": 0
+          },
+          "z": {
+            "type": "minecraft:trapezoid",
+            "max": 3,
+            "min": -3,
+            "plateau": 0
+          },
+          "y": {
+            "type": "minecraft:trapezoid",
+            "max": 1,
+            "min": -1,
+            "plateau": 0
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    },
+    {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "to_place": {
+          "state": {
+            "id": "minecraft:cornflower"
+          },
+          "type": "minecraft:simple"
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:count",
+          "count": 8
+        },
+        {
+          "type": "minecraft:offset",
+          "x": {
+            "type": "minecraft:trapezoid",
+            "max": 3,
+            "min": -3,
+            "plateau": 0
+          },
+          "z": {
+            "type": "minecraft:trapezoid",
+            "max": 3,
+            "min": -3,
+            "plateau": 0
+          },
+          "y": {
+            "type": "minecraft:trapezoid",
+            "max": 1,
+            "min": -1,
+            "plateau": 0
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    },
+    {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "to_place": {
+          "state": {
+            "id": "minecraft:azure_bluet"
+          },
+          "type": "minecraft:simple"
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:count",
+          "count": 8
+        },
+        {
+          "type": "minecraft:offset",
+          "x": {
+            "type": "minecraft:trapezoid",
+            "max": 3,
+            "min": -3,
+            "plateau": 0
+          },
+          "z": {
+            "type": "minecraft:trapezoid",
+            "max": 3,
+            "min": -3,
+            "plateau": 0
+          },
+          "y": {
+            "type": "minecraft:trapezoid",
+            "max": 1,
+            "min": -1,
+            "plateau": 0
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    },
+    {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "to_place": {
+          "state": {
+            "id": "minecraft:poppy"
+          },
+          "type": "minecraft:simple"
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:count",
+          "count": 8
+        },
+        {
+          "type": "minecraft:offset",
+          "x": {
+            "type": "minecraft:trapezoid",
+            "max": 3,
+            "min": -3,
+            "plateau": 0
+          },
+          "z": {
+            "type": "minecraft:trapezoid",
+            "max": 3,
+            "min": -3,
+            "plateau": 0
+          },
+          "y": {
+            "type": "minecraft:trapezoid",
+            "max": 1,
+            "min": -1,
+            "plateau": 0
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    }
+  ]
+}

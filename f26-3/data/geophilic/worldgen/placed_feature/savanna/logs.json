@@ -1,0 +1,58 @@
+{
+  "feature": {
+    "type": "minecraft:random_selector",
+    "default": {
+      "feature": "geophilic:fallen_log/acacia",
+      "placement": []
+    },
+    "features": [
+      {
+        "chance": 0.5,
+        "feature": {
+          "feature": "geophilic:tree_stump/acacia",
+          "placement": []
+        }
+      }
+    ]
+  },
+  "placement": [
+    {
+      "count": {
+        "max_inclusive": 2,
+        "min_inclusive": 1,
+        "type": "minecraft:uniform"
+      },
+      "type": "minecraft:count"
+    },
+    {
+      "chance": 5,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "max_water_depth": 0,
+      "type": "minecraft:surface_water_depth_filter"
+    },
+    {
+      "heightmap": "MOTION_BLOCKING_NO_LEAVES",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "predicate": {
+        "state": {
+          "id": "minecraft:acacia_sapling",
+          "properties": {
+            "stage": "0"
+          }
+        },
+        "type": "minecraft:would_survive"
+      },
+      "type": "minecraft:block_predicate_filter"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

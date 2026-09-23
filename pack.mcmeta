@@ -2,14 +2,14 @@
 	"pack": {
 		"name": "Geophilic",
 		"id": "geophilic",
-		"version": "3.6",
+		"version": "3.7",
 		"description": [
 			{
 				"text": "Geophilic",
 				"color": "#4080ff"
 			},
 			{
-				"text": " v3.6",
+				"text": " v3.7",
 				"color": "#767676"
 			},
 			{
@@ -28,10 +28,10 @@
 		"pack_format": 15,
 		"supported_formats": [
 			15,
-			107
+			121
 		],
 		"min_format": 15,
-		"max_format": 107
+		"max_format": 121
 	},
 	"overlays": {
 		"entries": [
@@ -88,6 +88,15 @@
 				"min_format": 107,
 				"max_format": 512,
 				"directory": "f26-2"
+			},
+			{
+				"formats": [
+					121,
+					512
+				],
+				"min_format": 121,
+				"max_format": 512,
+				"directory": "f26-3"
 			},
 			{
 				"formats": [
@@ -151,6 +160,15 @@
 				"min_format": 94,
 				"max_format": 512,
 				"directory": "biomes_1_21_11"
+			},
+			{
+				"formats": [
+					121,
+					512
+				],
+				"min_format": 121,
+				"max_format": 512,
+				"directory": "biomes_26_3"
 			}
 		]
 	}

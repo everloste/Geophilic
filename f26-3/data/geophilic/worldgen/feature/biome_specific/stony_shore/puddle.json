@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:delta_feature",
+  "contents": {
+    "id": "minecraft:water"
+  },
+  "rim": {
+    "id": "minecraft:stone"
+  },
+  "rim_size": 0,
+  "size": {
+    "max_inclusive": 5,
+    "min_inclusive": 4,
+    "type": "minecraft:biased_to_bottom"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:simple_block",
+  "to_place": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "weight": 37,
+        "data": {
+          "id": "minecraft:short_grass"
+        }
+      },
+      {
+        "weight": 15,
+        "data": {
+          "id": "minecraft:fern"
+        }
+      },
+      {
+        "weight": 1,
+        "data": {
+          "id": "minecraft:tall_grass",
+          "properties": {
+            "half": "lower"
+          }
+        }
+      },
+      {
+        "weight": 1,
+        "data": {
+          "id": "minecraft:large_fern",
+          "properties": {
+            "half": "lower"
+          }
+        }
+      }
+    ]
+  }
+}

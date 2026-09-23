@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:random_selector",
+  "default": {
+    "feature": {
+      "type": "minecraft:disk",
+      "half_height": 1,
+      "radius": {
+        "max_inclusive": 3,
+        "min_inclusive": 1,
+        "type": "minecraft:biased_to_bottom"
+      },
+      "state_provider": {
+        "state": {
+          "id": "minecraft:podzol"
+        },
+        "type": "minecraft:simple"
+      },
+      "target": {
+        "blocks": "minecraft:grass_block",
+        "type": "minecraft:matching_blocks"
+      }
+    },
+    "placement": []
+  },
+  "features": [
+    {
+      "chance": 0.4,
+      "feature": {
+        "feature": {
+          "type": "minecraft:disk",
+          "half_height": 1,
+          "radius": {
+            "max_inclusive": 2,
+            "min_inclusive": 1,
+            "type": "minecraft:biased_to_bottom"
+          },
+          "state_provider": {
+            "state": {
+              "id": "minecraft:grass_block"
+            },
+            "type": "minecraft:simple"
+          },
+          "target": {
+            "blocks": "minecraft:podzol",
+            "type": "minecraft:matching_blocks"
+          }
+        },
+        "placement": []
+      }
+    }
+  ]
+}

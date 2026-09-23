@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:block_pile",
+  "state_provider": {
+    "state": {
+      "id": "minecraft:ice"
+    },
+    "type": "minecraft:simple"
+  }
+}

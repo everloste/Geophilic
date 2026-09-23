@@ -1,0 +1,119 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "features": [
+    {
+      "feature": {
+        "type": "minecraft:block_column",
+        "allowed_placement": {
+          "predicates": [
+            {
+              "type": "minecraft:replaceable"
+            },
+            {
+              "predicates": [
+                {
+                  "direction": "up",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "type": "minecraft:has_sturdy_face"
+                },
+                {
+                  "direction": "up",
+                  "offset": [
+                    0,
+                    -2,
+                    0
+                  ],
+                  "type": "minecraft:has_sturdy_face"
+                }
+              ],
+              "type": "minecraft:any_of"
+            }
+          ],
+          "type": "minecraft:all_of"
+        },
+        "direction": "north",
+        "layers": [
+          {
+            "height": {
+              "max_inclusive": 6,
+              "min_inclusive": 4,
+              "type": "minecraft:uniform"
+            },
+            "provider": {
+              "state": {
+                "id": "minecraft:pale_oak_log",
+                "properties": {
+                  "axis": "z"
+                }
+              },
+              "type": "minecraft:simple"
+            }
+          }
+        ],
+        "prioritize_tip": false
+      },
+      "placement": []
+    },
+    {
+      "feature": {
+        "type": "minecraft:block_column",
+        "allowed_placement": {
+          "predicates": [
+            {
+              "type": "minecraft:replaceable"
+            },
+            {
+              "predicates": [
+                {
+                  "direction": "up",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "type": "minecraft:has_sturdy_face"
+                },
+                {
+                  "direction": "up",
+                  "offset": [
+                    0,
+                    -2,
+                    0
+                  ],
+                  "type": "minecraft:has_sturdy_face"
+                }
+              ],
+              "type": "minecraft:any_of"
+            }
+          ],
+          "type": "minecraft:all_of"
+        },
+        "direction": "west",
+        "layers": [
+          {
+            "height": {
+              "max_inclusive": 6,
+              "min_inclusive": 4,
+              "type": "minecraft:uniform"
+            },
+            "provider": {
+              "state": {
+                "id": "minecraft:pale_oak_log",
+                "properties": {
+                  "axis": "x"
+                }
+              },
+              "type": "minecraft:simple"
+            }
+          }
+        ],
+        "prioritize_tip": false
+      },
+      "placement": []
+    }
+  ]
+}
