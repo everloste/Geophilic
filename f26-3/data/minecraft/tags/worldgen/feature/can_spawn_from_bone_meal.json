@@ -1,0 +1,30 @@
+{
+	"replace": false,
+	"values": [
+		"geophilic:flower/noise_based/flower_forest",
+		"geophilic:flower/noise_based/meadow",
+		"geophilic:flower/noise_based/plain",
+		"geophilic:flower/noise_based/windswept",
+		"geophilic:flower/allium",
+		"geophilic:flower/azure_bluet",
+		"geophilic:flower/blue_orchid",
+		"geophilic:flower/classic",
+		"geophilic:flower/cornflower",
+		"geophilic:flower/dandelion",
+		"geophilic:flower/eyeblossom",
+		"geophilic:flower/forest",
+		"geophilic:flower/lily_of_the_valley",
+		"geophilic:flower/oxeye_daisy",
+		"geophilic:flower/poppy",
+		"geophilic:flower/sunflower",
+		"geophilic:flower/tulip/mixed",
+		"geophilic:flower/tulip/random",
+		"geophilic:flower/wither_rose",
+		"geophilic:patch/grass/forest",
+		"geophilic:patch/grass/jungle",
+		"geophilic:patch/grass/meadow",
+		"geophilic:patch/grass/plains",
+		"geophilic:patch/grass/savanna",
+		"geophilic:patch/grass/taiga"
+	]
+}
