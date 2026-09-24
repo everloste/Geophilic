@@ -132,6 +132,8 @@
   ],
   "downfall": 0,
   "effects": {
+    "foliage_color": 7767329,
+    "grass_color": 13089351,
     "water_color": "#3f76e4"
   },
   "features": [

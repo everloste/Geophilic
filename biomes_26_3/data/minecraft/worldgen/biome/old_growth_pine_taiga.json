@@ -133,6 +133,7 @@
   ],
   "downfall": 0.8,
   "effects": {
+    "grass_color": 5996627,
     "water_color": "#3f76e4"
   },
   "features": [
