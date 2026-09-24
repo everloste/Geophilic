@@ -4,7 +4,7 @@
       "default": {
         "max_delay": 24000,
         "min_delay": 12000,
-        "sound": "minecraft:music.overworld.forest"
+        "sound": "minecraft:music.overworld.sparse_jungle"
       }
     },
     "minecraft:gameplay/natural_mob_spawns": {
@@ -37,6 +37,20 @@
             {
               "type": "minecraft:cow",
               "count": 4,
+              "weight": 8
+            },
+            {
+              "type": "minecraft:chicken",
+              "count": 4,
+              "weight": 10
+            },
+            {
+              "type": "minecraft:wolf",
+              "count": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 4,
+                "min_inclusive": 2
+              },
               "weight": 8
             }
           ],
@@ -101,14 +115,14 @@
       },
       "modifier": "overlay"
     },
-    "minecraft:visual/sky_color": "#7aa5ff"
+    "minecraft:visual/sky_color": "#77a8ff"
   },
   "carvers": [
     "minecraft:cave",
     "minecraft:cave_extra_underground",
     "minecraft:canyon"
   ],
-  "downfall": 0.6,
+  "downfall": 0.8,
   "effects": {
     "water_color": "#3f76e4"
   },
@@ -165,24 +179,23 @@
     ],
     [
       "minecraft:glow_lichen",
-      "geophilic:forest/dirt_patches",
-      "geophilic:forest/rocks",
-      "geophilic:forest/birch/old_growth/trees",
-      "geophilic:common/tree_ornaments/birch",
-      "geophilic:forest/birch/logs",
-      "geophilic:forest/flowers",
-      "geophilic:forest/birch/wildflowers_dense",
+      "geophilic:jungle/rocks",
+      "geophilic:jungle/sparse/trees",
+      "geophilic:jungle/logs",
+      "geophilic:jungle/sparse/bushes",
+      "geophilic:common/flowers/warm",
       "geophilic:common/mushrooms",
       "geophilic:common/sugar_cane",
       "geophilic:common/pumpkins",
       "geophilic:common/moss",
-      "geophilic:common/bush_patch",
-      "geophilic:common/grass/forest"
+      "minecraft:vines",
+      "geophilic:jungle/melons",
+      "geophilic:common/grass/jungle"
     ],
     [
       "minecraft:freeze_top_layer"
     ]
   ],
   "has_precipitation": true,
-  "temperature": 0.6
+  "temperature": 0.95
 }

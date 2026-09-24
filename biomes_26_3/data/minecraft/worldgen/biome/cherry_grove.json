@@ -4,7 +4,7 @@
       "default": {
         "max_delay": 24000,
         "min_delay": 12000,
-        "sound": "minecraft:music.overworld.forest"
+        "sound": "minecraft:music.overworld.cherry_grove"
       }
     },
     "minecraft:gameplay/natural_mob_spawns": {
@@ -20,24 +20,31 @@
           ],
           "creature": [
             {
-              "type": "minecraft:sheep",
-              "count": 4,
-              "weight": 12
-            },
-            {
               "type": "minecraft:pig",
-              "count": 4,
-              "weight": 10
+              "count": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 2,
+                "min_inclusive": 1
+              },
+              "weight": 1
             },
             {
-              "type": "minecraft:chicken",
-              "count": 4,
-              "weight": 10
+              "type": "minecraft:rabbit",
+              "count": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 6,
+                "min_inclusive": 2
+              },
+              "weight": 2
             },
             {
-              "type": "minecraft:cow",
-              "count": 4,
-              "weight": 8
+              "type": "minecraft:sheep",
+              "count": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 4,
+                "min_inclusive": 2
+              },
+              "weight": 2
             }
           ],
           "monster": [
@@ -101,16 +108,19 @@
       },
       "modifier": "overlay"
     },
-    "minecraft:visual/sky_color": "#7aa5ff"
+    "minecraft:visual/sky_color": "#7ba4ff",
+    "minecraft:visual/water_fog_color": "#5db7ef"
   },
   "carvers": [
     "minecraft:cave",
     "minecraft:cave_extra_underground",
     "minecraft:canyon"
   ],
-  "downfall": 0.6,
+  "downfall": 0.8,
   "effects": {
-    "water_color": "#3f76e4"
+    "foliage_color": "#b6db61",
+    "grass_color": "#b6db61",
+    "water_color": "#5db7ef"
   },
   "features": [
     [],
@@ -156,33 +166,36 @@
       "minecraft:underwater_magma",
       "minecraft:disk_sand",
       "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "minecraft:disk_gravel",
+      "minecraft:ore_emerald"
     ],
-    [],
+    [
+      "minecraft:ore_infested"
+    ],
     [
       "minecraft:spring_water",
       "minecraft:spring_lava"
     ],
     [
       "minecraft:glow_lichen",
-      "geophilic:forest/dirt_patches",
-      "geophilic:forest/rocks",
-      "geophilic:forest/birch/old_growth/trees",
-      "geophilic:common/tree_ornaments/birch",
-      "geophilic:forest/birch/logs",
-      "geophilic:forest/flowers",
-      "geophilic:forest/birch/wildflowers_dense",
+      "geophilic:cherry_grove/rocks",
+      "geophilic:cherry_grove/stone_patches",
+      "geophilic:cherry_grove/pillars",
+      "geophilic:cherry_grove/deltas",
+      "geophilic:cherry_grove/trees",
+      "geophilic:cherry_grove/bamboo",
+      "geophilic:cherry_grove/bushes",
+      "geophilic:cherry_grove/fallen_logs",
+      "geophilic:cherry_grove/pink_petals",
       "geophilic:common/mushrooms",
       "geophilic:common/sugar_cane",
-      "geophilic:common/pumpkins",
       "geophilic:common/moss",
-      "geophilic:common/bush_patch",
-      "geophilic:common/grass/forest"
+      "geophilic:common/grass/meadow"
     ],
     [
       "minecraft:freeze_top_layer"
     ]
   ],
   "has_precipitation": true,
-  "temperature": 0.6
+  "temperature": 0.5
 }

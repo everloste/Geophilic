@@ -1,12 +1,5 @@
 {
   "attributes": {
-    "minecraft:audio/background_music": {
-      "default": {
-        "max_delay": 24000,
-        "min_delay": 12000,
-        "sound": "minecraft:music.overworld.forest"
-      }
-    },
     "minecraft:gameplay/natural_mob_spawns": {
       "argument": {
         "spawn_costs": {},
@@ -38,6 +31,29 @@
               "type": "minecraft:cow",
               "count": 4,
               "weight": 8
+            },
+            {
+              "type": "minecraft:horse",
+              "count": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 6,
+                "min_inclusive": 2
+              },
+              "weight": 1
+            },
+            {
+              "type": "minecraft:donkey",
+              "count": 1,
+              "weight": 1
+            },
+            {
+              "type": "minecraft:armadillo",
+              "count": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 3,
+                "min_inclusive": 2
+              },
+              "weight": 10
             }
           ],
           "monster": [
@@ -49,10 +65,15 @@
             {
               "type": "minecraft:zombie",
               "count": 4,
-              "weight": 95
+              "weight": 90
             },
             {
               "type": "minecraft:zombie_villager",
+              "count": 1,
+              "weight": 5
+            },
+            {
+              "type": "minecraft:zombie_horse",
               "count": 1,
               "weight": 5
             },
@@ -101,14 +122,15 @@
       },
       "modifier": "overlay"
     },
-    "minecraft:visual/sky_color": "#7aa5ff"
+    "minecraft:gameplay/snow_golem_melts": true,
+    "minecraft:visual/sky_color": "#6eb1ff"
   },
   "carvers": [
     "minecraft:cave",
     "minecraft:cave_extra_underground",
     "minecraft:canyon"
   ],
-  "downfall": 0.6,
+  "downfall": 0,
   "effects": {
     "water_color": "#3f76e4"
   },
@@ -165,24 +187,23 @@
     ],
     [
       "minecraft:glow_lichen",
-      "geophilic:forest/dirt_patches",
-      "geophilic:forest/rocks",
-      "geophilic:forest/birch/old_growth/trees",
-      "geophilic:common/tree_ornaments/birch",
-      "geophilic:forest/birch/logs",
-      "geophilic:forest/flowers",
-      "geophilic:forest/birch/wildflowers_dense",
+      "geophilic:savanna/dirt_patches",
+      "geophilic:savanna/dirt_mounds",
+      "geophilic:savanna/trees",
+      "geophilic:savanna/bonus_trees",
+      "geophilic:savanna/logs",
+      "geophilic:savanna/bushes",
+      "geophilic:common/flowers/warm",
       "geophilic:common/mushrooms",
       "geophilic:common/sugar_cane",
       "geophilic:common/pumpkins",
-      "geophilic:common/moss",
-      "geophilic:common/bush_patch",
-      "geophilic:common/grass/forest"
+      "geophilic:common/tall_grass",
+      "geophilic:common/grass/savanna"
     ],
     [
       "minecraft:freeze_top_layer"
     ]
   ],
-  "has_precipitation": true,
-  "temperature": 0.6
+  "has_precipitation": false,
+  "temperature": 2
 }

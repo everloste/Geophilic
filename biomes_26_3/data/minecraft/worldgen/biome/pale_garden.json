@@ -1,12 +1,7 @@
 {
   "attributes": {
-    "minecraft:audio/background_music": {
-      "default": {
-        "max_delay": 24000,
-        "min_delay": 12000,
-        "sound": "minecraft:music.overworld.forest"
-      }
-    },
+    "minecraft:audio/background_music": {},
+    "minecraft:audio/music_volume": 0,
     "minecraft:gameplay/natural_mob_spawns": {
       "argument": {
         "spawn_costs": {},
@@ -16,28 +11,6 @@
               "type": "minecraft:bat",
               "count": 8,
               "weight": 10
-            }
-          ],
-          "creature": [
-            {
-              "type": "minecraft:sheep",
-              "count": 4,
-              "weight": 12
-            },
-            {
-              "type": "minecraft:pig",
-              "count": 4,
-              "weight": 10
-            },
-            {
-              "type": "minecraft:chicken",
-              "count": 4,
-              "weight": 10
-            },
-            {
-              "type": "minecraft:cow",
-              "count": 4,
-              "weight": 8
             }
           ],
           "monster": [
@@ -101,16 +74,21 @@
       },
       "modifier": "overlay"
     },
-    "minecraft:visual/sky_color": "#7aa5ff"
+    "minecraft:visual/fog_color": "#817770",
+    "minecraft:visual/sky_color": "#b9b9b9",
+    "minecraft:visual/water_fog_color": "#556980"
   },
   "carvers": [
     "minecraft:cave",
     "minecraft:cave_extra_underground",
     "minecraft:canyon"
   ],
-  "downfall": 0.6,
+  "downfall": 0.8,
   "effects": {
-    "water_color": "#3f76e4"
+    "dry_foliage_color": "#a0a69c",
+    "foliage_color": "#878d76",
+    "grass_color": "#778272",
+    "water_color": "#76889d"
   },
   "features": [
     [],
@@ -165,18 +143,14 @@
     ],
     [
       "minecraft:glow_lichen",
-      "geophilic:forest/dirt_patches",
-      "geophilic:forest/rocks",
-      "geophilic:forest/birch/old_growth/trees",
-      "geophilic:common/tree_ornaments/birch",
-      "geophilic:forest/birch/logs",
-      "geophilic:forest/flowers",
-      "geophilic:forest/birch/wildflowers_dense",
-      "geophilic:common/mushrooms",
+      "geophilic:pale_garden/trees",
+      "geophilic:pale_garden/logs",
+      "geophilic:pale_garden/moss",
+      "geophilic:pale_garden/flowers",
+      "geophilic:pale_garden/dead_bushes",
       "geophilic:common/sugar_cane",
       "geophilic:common/pumpkins",
-      "geophilic:common/moss",
-      "geophilic:common/bush_patch",
+      "geophilic:common/pale_moss",
       "geophilic:common/grass/forest"
     ],
     [
@@ -184,5 +158,5 @@
     ]
   ],
   "has_precipitation": true,
-  "temperature": 0.6
+  "temperature": 0.7
 }
