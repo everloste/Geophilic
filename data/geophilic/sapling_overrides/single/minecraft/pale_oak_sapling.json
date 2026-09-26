@@ -1,0 +1,25 @@
+{
+	"replace": false,
+	"values": {
+		"minecraft:pale_garden": [
+			{
+				"feature": "geophilic:tree/pale_oak/slim",
+				"weight": 71
+			},
+			{
+				"feature": "geophilic:tree/pale_oak/crooked",
+				"weight": 29
+			}
+		],
+		"treeplacer:all_biomes": [
+			{
+				"feature": "geophilic:tree/pale_oak/slim",
+				"weight": 71
+			},
+			{
+				"feature": "geophilic:tree/pale_oak/crooked",
+				"weight": 29
+			}
+		]
+	}
+}

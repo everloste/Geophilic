@@ -1,0 +1,76 @@
+{
+	"replace": false,
+	"values": {
+		"minecraft:grove": [
+			{
+				"feature": "minecraft:mega_spruce",
+				"weight": 50
+			},
+			{
+				"feature": "minecraft:mega_pine",
+				"weight": 50
+			}
+		],
+		"minecraft:old_growth_pine_taiga": [
+			{
+				"feature": "minecraft:mega_pine",
+				"weight": 92
+			},
+			{
+				"feature": "minecraft:mega_spruce",
+				"weight": 8
+			}
+		],
+		"minecraft:old_growth_spruce_taiga": "minecraft:mega_spruce",
+		"minecraft:snowy_taiga": [
+			{
+				"feature": "minecraft:mega_spruce",
+				"weight": 50
+			},
+			{
+				"feature": "minecraft:mega_pine",
+				"weight": 50
+			}
+		],
+		"minecraft:taiga": [
+			{
+				"feature": "minecraft:mega_spruce",
+				"weight": 50
+			},
+			{
+				"feature": "minecraft:mega_pine",
+				"weight": 50
+			}
+		],
+		"minecraft:windswept_forest": [
+			{
+				"feature": "minecraft:mega_spruce",
+				"weight": 50
+			},
+			{
+				"feature": "minecraft:mega_pine",
+				"weight": 50
+			}
+		],
+		"minecraft:windswept_gravelly_hills": [
+			{
+				"feature": "minecraft:mega_spruce",
+				"weight": 50
+			},
+			{
+				"feature": "minecraft:mega_pine",
+				"weight": 50
+			}
+		],
+		"minecraft:windswept_hills": [
+			{
+				"feature": "minecraft:mega_spruce",
+				"weight": 50
+			},
+			{
+				"feature": "minecraft:mega_pine",
+				"weight": 50
+			}
+		]
+	}
+}

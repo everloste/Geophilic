@@ -1,0 +1,91 @@
+{
+	"replace": false,
+	"values": {
+		"minecraft:grove": [
+			{
+				"feature": "geophilic:tree/spruce/classic",
+				"weight": 53
+			},
+			{
+				"feature": "geophilic:tree/spruce/short",
+				"weight": 30
+			},
+			{
+				"feature": "geophilic:tree/spruce/tall",
+				"weight": 14
+			},
+			{
+				"feature": "geophilic:tree/spruce/young",
+				"weight": 3
+			}
+		],
+		"minecraft:old_growth_pine_taiga": [
+			{
+				"feature": "geophilic:tree/spruce/classic",
+				"weight": 67
+			},
+			{
+				"feature": "minecraft:pine",
+				"weight": 33
+			}
+		],
+		"minecraft:old_growth_spruce_taiga": [
+			{
+				"feature": "geophilic:tree/spruce/classic",
+				"weight": 67
+			},
+			{
+				"feature": "minecraft:pine",
+				"weight": 33
+			}
+		],
+		"minecraft:snowy_taiga": [
+			{
+				"feature": "geophilic:tree/spruce/classic",
+				"weight": 53
+			},
+			{
+				"feature": "geophilic:tree/spruce/short",
+				"weight": 30
+			},
+			{
+				"feature": "geophilic:tree/spruce/tall",
+				"weight": 14
+			},
+			{
+				"feature": "geophilic:tree/spruce/young",
+				"weight": 3
+			}
+		],
+		"minecraft:taiga": [
+			{
+				"feature": "geophilic:tree/spruce/classic",
+				"weight": 53
+			},
+			{
+				"feature": "geophilic:tree/spruce/short",
+				"weight": 30
+			},
+			{
+				"feature": "geophilic:tree/spruce/tall",
+				"weight": 14
+			},
+			{
+				"feature": "geophilic:tree/spruce/young",
+				"weight": 3
+			}
+		],
+		"minecraft:windswept_forest": [
+			{
+				"feature": "geophilic:tree/spruce/classic",
+				"weight": 89
+			},
+			{
+				"feature": "geophilic:tree/spruce/young",
+				"weight": 11
+			}
+		],
+		"minecraft:windswept_gravelly_hills": "geophilic:tree/spruce/classic",
+		"minecraft:windswept_hills": "geophilic:tree/spruce/classic"
+	}
+}

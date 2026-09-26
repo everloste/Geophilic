@@ -1,0 +1,16 @@
+{
+	"replace": false,
+	"values": {
+		"minecraft:pale_garden": [
+			{
+				"feature": "geophilic:tree/pale_oak/classic",
+				"weight": 63
+			},
+			{
+				"feature": "geophilic:tree/pale_oak/classic_large",
+				"weight": 37
+			}
+		],
+		"treeplacer:all_biomes": "minecraft:pale_oak_bonemeal"
+	}
+}

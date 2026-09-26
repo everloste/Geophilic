@@ -1,0 +1,16 @@
+{
+	"replace": false,
+	"values": {
+		"minecraft:dark_forest": [
+			{
+				"feature": "geophilic:tree/dark_oak/modern",
+				"weight": 61
+			},
+			{
+				"feature": "geophilic:tree/dark_oak/classic",
+				"weight": 39
+			}
+		],
+		"treeplacer:all_biomes": "minecraft:dark_oak"
+	}
+}
